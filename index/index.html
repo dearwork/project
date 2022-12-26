@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>📁PROJECT</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- <link rel="stylesheet" href="././common/css/ul.common.css"> -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+	<!-- status 전용 -->
+	<link rel="stylesheet" href="././common/css/status.css">
+	<!--// status 전용 -->
+
+</head>
+<body>
+	<div id="wrap">
+		<h1 class="title">📁PROJECT</h1>
+		<div class="note">
+			<ol>
+				<li>업데이트 관리자 : DEARWORK</li>
+				<li>SEVER LINK에는 깃허브에 올린 링크를 삽입</li>
+				<li></li>
+			</ol>
+		</div>
+		<nav class="tab_wrap">
+			<ul class="tab_cont">
+				<li class="all active">메뉴전체보기</li> <!-- class="active" -->
+				<li>COLA</li>
+			</ul>
+		</nav>
+		<main id="main">
+			<!-- COLA -->
+			<section class="work_section">
+				<table class="" border="1">
+					<thead>
+						<tr>
+							<th colspan="5">Cursed opera, Lie on the Ark<br>(저주받은 오페라, 거짓말의 방주)</th>
+						</tr>
+						<tr>
+							<td>keyword</td>
+							<td>description</td>
+							<td>name</td>
+							<td>status / sever link</td>
+							<td>note</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td rowspan="2" class="keyword">
+								<span>실험</span>
+								<span></span>
+							</td>
+							<td rowspan="2"></td>
+							<td rowspan="2">DEARWORK</td>
+							<td>
+								<p><a target="_blank" href="./cola/status/status.html">./cola/status/status.html</a></p>
+							</td>
+							<td rowspan="2">
+								<p>2022-12-26 status 및 가이드 제작</p>
+							</td>
+						</tr>
+						<tr>
+							<td><a target="_blank" href="">COLA서버링크</a></td>
+						</tr>
+					</tbody>
+				</table>
+
+				<h2 class="guide_tit">작업내역 전달 및 소스관리</h2>
+				<p></p>
+				<div class="guide_cont">
+					
+				</div>
+			</section>
+			<!--// COLA -->
+
+		</main>
+		<script>
+			$(".tab_wrap li").click(function() {
+				var tabId = $(this).index();
+
+				$(this).addClass("active");
+				$(this).siblings().removeClass("active");
+
+				$(".work_section").removeClass("all");
+				$(".work_section").eq(tabId - 1).addClass("active").siblings(".work_section").removeClass("active");
+				if($(this).hasClass("all")){
+					$(".work_section").addClass("all");
+					$(".menu_cont").removeClass("active");
+				}
+			});
+			$(".tab_wrap li:first-child").click();
+		</script>
+	</div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+@charset "uft-8";
+
+/*------------------------------ [ project ] ------------------------------*/
+.work_section .keyword span::before {content: "#";}
+
+
+/*------------------------------ [ 페이지 제목, NOTE, 탭 영역 ] ------------------------------*/
+.title {font-size: 32px; margin: 20px 0;}
+.subtitle {font-size: 24px; line-height: 26px; margin:0;}
+.subtitle span {font-size: 16px; color: #ACACAC; line-height: 18px;}
+
+.note {border: 2px dashed #ccc; padding: 10px;}
+
+
+/*------------------------------ [ work/menu_section 영역 ] ------------------------------*/
+.work_section,
+.menu_section {display: none;}
+
+.work_section.all,
+.work_section.active,
+.menu_section.all,
+.menu_section.on {display: block;}
+
+/*------------------------------ [ table 영역 ] ------------------------------*/
+
+/* comment */
+.comment p,
+.comment strong {font-size: 12px; line-height: 20px;}
+
+.comment .more_detail {overflow: hidden; height: 20px;}
+.comment .more_detail.open {height: auto;}
+.comment .more_detail strong {display: block; background: #8eaeeb;}
+
+.comment .vital {text-align: center; padding: 5px 0; margin: 5px 0; border-top: 1px solid #2503e2; border-bottom: 1px solid #2503e2;}
+
+/* 프로젝트별 코멘트 아이콘 */
+.cola .comment p::before,
+.cola .comment strong::before {content: "💧 ";}
+.cola .comment .vital::after {content: " 💧";}
+
+
+
+
+/*------------------------------ [  ] ------------------------------*/

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>🌊COLA STATUS</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- <link rel="stylesheet" href="./../../common/css/ul.common.css"> -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+	<!-- status 전용 -->
+	<link rel="stylesheet" href="./../../common/css/status.css">
+	<script src="./../../common/js/status.js"></script>
+	<!--// status 전용 -->
+</head>
+<body>
+	<div id="wrap" class="cola">
+		<h1 class="title">🌊COLA STATUS</h1>
+		<div class="note">
+			<ol>
+				<li>Cursed opera, Lie on the Ark(저주받은 오페라, 거짓말의 방주), 통칭 <strong>COLA</strong></li>
+				<li></li>
+				<li>COLA 레이아웃 가이드 보러가기 : <a href="./guide.html">레이아웃 가이드</a></li>
+				<li>COLA 세계관 보러가기 : <a href="./world.html">세계관</a></li>
+				<li>COLA 등장인물 보러가기 : <a href="./status.html">등장인물</a></li>
+			</ol>
+		</div>
+		<!-- 탭리스트 -->
+		<nav class="tab_wrap">
+			<ul class="tab_cont">
+				<!-- <li data-tab=""></li> -->
+				<li class="all on">메뉴 전체보기</li>
+				<li>메인</li>
+				<li>이벤트</li>
+				<li>STATUS 작성방법</li>
+			</ul>
+		</nav>
+		<!--// 탭리스트 -->
+		<main id="main">
+			<section class="menu_section">
+				
+			</section>
+
+			<!-- 이벤트 페이지 -->
+			<section class="menu_section">
+
+			</section>
+			<!--// 이벤트 페이지 -->
+
+			<!-- STATUS 작성방법 -->
+			<section class="menu_section">
+				<h2>STATUS 작성 방법</h2>
+				<!--
+				고정형 템플렛
+				메인페이지, 스토리 등과 같이 변하지 않는 페이지 정리 템플렛
+				-->
+				<table border="1" class="menu_cont type">
+					<thead>
+						<tr>
+							<th colspan="9">고정형페이지 템플렛</th>
+						</tr>
+						<tr>
+							<td scope="col">1depth</td>
+							<td scope="col">2depth</td>
+							<td scope="col">3depth</td>
+							<td scope="col">4depth or tab</td>
+							<td scope="col" class="type">type</td>
+							<td scope="col" class="link">link</td>
+							<td scope="col" class="name">name</td>
+							<td scope="col" class="complete">complete</td>
+							<td scope="col" class="comment">comment</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>메인</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td>/main/home</td>
+							<td></td>
+							<td></td>
+							<td class="comment">
+								<p>일단 텍스트 문단</p>
+								<div class="more_detail"> <!-- 자세히보기 열기일때 class="open" 추가 -->
+									<strong>자세히 보기</strong>
+									<p>자세히 적어야하는 코멘트일 경우</p>
+									<p>.comment > .more > strong + p 형식으로 작성하기</p>
+								</div>
+								<div class="vital">
+									<strong>강조하고 싶은 중요한 코멘트일 경우</strong>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<!--// 고정형 템플렛 -->
+
+				<!-- 이벤트 템플렛 -->
+				<table border="1" class="evt_cont">
+					<thead>
+						<tr>
+							<th colspan="6">이벤트 템플렛</th>
+						</tr>
+						<tr>
+							<td scope="col" class="event_name">event</td>
+							<td scope="col" class="type">type</td>
+							<td scope="col" class="link">link</td>
+							<td scope="col" class="name">name</td>
+							<td scope="col" class="complete">complete</td>
+							<td scope="col" class="comment">comment</td>
+						</tr>
+					</thead>
+					<tbody>
+					</tbody>
+				</table>
+				<!--// 이벤트 템플렛 -->
+
+			</section>
+			<!--// STATUS 작성방법 -->
+			
+		</main>
+		<script>
+			tabLink(); //tab 이동
+			moreDetail();
+		</script>
+	</div>
+</body>
+</html>
