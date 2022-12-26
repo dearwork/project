@@ -30,5 +30,3 @@ function moreDetail() {
 		}
 	})
 }
-
-// sub_tab 이동

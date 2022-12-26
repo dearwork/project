@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-	<title>🌊COLA 레이아웃</title>
+	<title>🌊COLA 레이아웃 가이드</title>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<!-- <link rel="stylesheet" href="./../common/css/ul.common.css"> -->
+	<link rel="stylesheet" href="./../common/css/ul.common.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 	<!-- status 전용 -->
@@ -15,19 +15,177 @@
 	<!--// status 전용 -->
 </head>
 <body>
-	<div id="wrap" class="cola">
-		<h1 class="title">🌊COLA 가이드</h1>
-		<div class="guide_wrap">
-			<strong class="guide_tit">COLA 테마 색상</strong>
-			<div class="gudie_cont">
-				<p class="guide_txt">상황을 설명할때, 기본적인 텍스트입니다.</p>
-				<p>투명도 있는, 희미하게 지나가는 상황일 경우 나타나는 텍스트입니다.</p>
-				<p class="rgb_8eaeeb">투명도 있는, 희미하게 지나가는 상황일 경우 나타나는 텍스트입니다.</p>
-				<p class="rgb_00d49f">긍정적인 효과를 나타날때 나타나는 텍스트입니다.</p>
-				<p class="rgb_2793ff">무언가를 발견하거나, 힌트 또는 팁을 받을 때 나타나는 텍스트입니다.</p>
-				<p class="rgb_2503e2">위험한 상황, 혹은 불길한 무언가일 경우 텍스트입니다.</p>
+	<div id="wrap" class="layout">
+		<h1 class="title">🌊COLA 레이아웃 가이드</h1>
+		<main id="main">
+			<div class="g_wrap">
+				<h2>홈페이지 반응형 구분 및 CSS 작성</h2>
+				<div class="g_cont">
+					<div class="g_tit">Mobile(767px 이하)</div>
+					<div class="g_code">@media all and (max-width: 767px) and (min-width: 320px)</div>
+					<div class="g_tit">Tablet(768px ~ 1023px)</div>
+					<div class="g_code">@media all and (max-width: 1023px) and (min-width: 768px)</div>
+					<div class="g_tit">PC(1024px 이상)</div>
+					<div class="g_code">PC 최소 너비 : 1024px</div>
+
+				</div>
 			</div>
-		</div>
+			<div class="g_wrap">
+				<h2>디렉토리 구조 및 파일 구성 명명 규칙</h2>
+				<div class="g_cont">
+					<p class="g_code">
+						* 모든 디렉토리명과 파일명은 한글 사용 금지하며 영문, 소문자로 통인한다. <strong>(숫자 및 언더바(_) 사용가능)</strong><br>
+						ex) btn_tab01.png, main_page.html
+					</p>
+					<strong class="g_tit">디렉토리 구조도(html)</strong>
+					<div class="g_table">
+						<table>
+							<thead>
+								<tr>
+									<th>디렉토리 및 파일명</th>
+									<th>내용</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>/main</td>
+									<td>메인</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<strong class="g_tit">디렉토리 구조도(css)</strong>
+					<div class="g_table">
+						<table>
+							<thead>
+								<tr>
+									<th>디렉토리 및 파일명</th>
+									<th>내용</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td></td>
+									<td></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<strong class="g_tit">디렉토리 구조도(js)</strong>
+					<div class="g_table">
+						<table>
+							<thead>
+								<tr>
+									<th>디렉토리 및 파일명</th>
+									<th>내용</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td></td>
+									<td></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<strong class="g_tit">디렉토리 구조도(image)</strong>
+					<div class="g_table">
+						<table>
+							<thead>
+								<tr>
+									<th>디렉토리 및 파일명</th>
+									<th>내용</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>/common/</td>
+									<td>공통 사용(아이콘)</td>
+								</tr>
+								<tr>
+									<td>/picture/</td>
+									<td>사진</td>
+								</tr>
+								<tr>
+									<td>/char/</td>
+									<td>캐릭터</td>
+								</tr>
+								<tr>
+									<td>/video/</td>
+									<td>애니메이션, 영상</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<div class="g_wrap">
+				<h2>폰트</h2>
+				<div class="g_cont">
+					<p>class=""</p>
+					<p class="">COLA 타이틀 스타일</p>
+					<p>class=""</p>
+					<p class="">COLA 타이틀 스타일</p>
+					<p>class=""</p>
+					<p class="">COLA 타이틀 스타일</p>
+					<p>class=""</p>
+					<p class="">COLA 타이틀 스타일</p>
+					<p>class=""</p>
+					<p class="">본문 스타일</p>
+					<p>기본</p>
+					<p class="">본문 스타일</p>
+					<p>span class=""</p>
+					<p class="">문장 전체가 아닌 <span>키워드</span> 혹은 <span>중요단어</span>, <span>문장</span>에 색이 들어갈 수 있습니다.</p>
+					<p class="">기울기가 들어간 텍스트입니다.</p>
+					<p class="">바탕색이 있는 텍스트입니다.</p>
+				</div>
+				<div class="g_cont">
+					<strong class="g_tit">테마 색상</strong>
+					<p>상황을 설명할때, 기본적인 텍스트입니다.</p>
+					<p class="">투명도 있는, 희미하게 지나가는 상황일 경우 나타나는 텍스트입니다.</p>
+					<p class="">긍정적인 효과를 나타날때 나타나는 텍스트입니다.</p>
+					<p class="">무언가를 발견하거나, 힌트 또는 팁을 받을 때 나타나는 텍스트입니다.</p>
+					<p class="">위험한 상황, 혹은 불길한 무언가일 경우 텍스트입니다.</p>
+				</div>
+			</div>
+
+			<div class="g_wrap">
+				<h2>선택지</h2>
+				<div class="g_cont box">
+					<p></p>
+					<p></p>
+					
+				</div>
+			</div>
+
+			<div class="g_wrap">
+				<h2>이미지</h2>
+				<div class="g_cont box">
+					<p></p>
+					<p></p>
+					
+				</div>
+			</div>
+
+			<div class="g_wrap">
+				<h2>팝업</h2>
+				<div class="g_cont box">
+					<p class="g_tit">기본</p>
+					<button type="button">버튼</button>
+					<p class="g_tit">이미지 팝업일 경우</p>
+					<button type="button">버튼</button>
+				</div>
+			</div>
+
+			<div class="g_wrap">
+				<h2>버튼</h2>
+				<div class="g_cont box">
+					<p></p>
+					<p></p>
+					
+				</div>
+			</div>
+		</main>
 	</div>
 </body>
 </html>

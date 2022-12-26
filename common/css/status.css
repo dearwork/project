@@ -5,7 +5,7 @@
 
 
 /*------------------------------ [ 페이지 제목, NOTE, 탭 영역 ] ------------------------------*/
-.title {font-size: 32px; margin: 20px 0;}
+.title {font-size: 32px; margin: 20px 0; font-weight: 700;}
 .subtitle {font-size: 24px; line-height: 26px; margin:0;}
 .subtitle span {font-size: 16px; color: #ACACAC; line-height: 18px;}
 
@@ -39,6 +39,25 @@
 .cola .comment .vital::after {content: " 💧";}
 
 
+/*------------------------------ [ 레이아웃 가이드 ] ------------------------------*/
 
+.layout {min-width: 320px; margin: 0 auto;}
+
+.layout h1 {margin-bottom: 30px;}
+.layout h2 {padding-left: 10px; font-size: 24px; line-height: 32px; font-weight: 500; color: #0A0279; background: #77ADFF; margin-bottom: 10px;}
+
+.g_wrap {}
+.g_wrap ~ .g_wrap {margin-top: 30px;}
+.g_wrap strong {font-weight: 600;}
+.g_wrap .g_tit {display: block; font-size: 18px; line-height: 26px; font-weight: 500; margin-bottom: 10px;}
+.g_wrap .g_tit::before {content: "💡 ";}
+.g_wrap .g_cont {margin: 10px 10px 0;}
+.g_wrap .g_cont ~ .g_cont {margin-top: 30px;}
+.g_wrap .g_cont p {line-height: 22px;}
+.g_wrap .g_cont .g_code {background: #EAEAEA; padding: 10px; margin-bottom: 20px;}
+.g_wrap .g_cont .g_table {margin-bottom: 20px;}
+.g_wrap .g_cont .g_table th,
+.g_wrap .g_cont .g_table td {width: calc(100% / 2); text-align: left; padding: 10px 0; border-bottom: 1px solid #0A0279;}
+.g_wrap .g_cont .g_table tbody td{font-size: 14px; color: #111111;}
 
 /*------------------------------ [  ] ------------------------------*/
