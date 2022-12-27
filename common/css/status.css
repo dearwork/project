@@ -65,7 +65,7 @@
 .g_wrap .g_cont {margin: 10px 10px 0;}
 .g_wrap .g_cont ~ .g_cont {margin-top: 30px;}
 .g_wrap .g_cont .g_ex {margin: 10px 0;}
-.g_wrap .g_cont .g_code {background: #EAEAEA; padding: 10px; margin-bottom: 20px;}
+.g_wrap .g_cont .g_code {background: #EAEAEA; padding: 10px;}
 .g_wrap .g_cont .meno::before {content: "*";}
 .g_wrap .g_cont .list li::before {content: "· ";}
 .g_wrap .g_cont .g_table {margin-bottom: 20px;}
