@@ -1,10 +1,64 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-	<title>🌊COLA 레이아웃 가이드</title>
+	<title>COLA 레이아웃 가이드</title>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- favicon -->
+	<link rel="shortcut icon" href="./../common/image/common/favicon/favicon.ico"> <!--추가-->
+	<link rel="apple-touch-icon" sizes="57x57" href="./../common/image/common/favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="./../common/image/common/favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="./../common/image/common/favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="./../common/image/common/favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="./../common/image/common/favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="./../common/image/common/favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="./../common/image/common/favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="./../common/image/common/favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="./../common/image/common/favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="./../common/image/common/favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./../common/image/common/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="./../common/image/common/favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./../common/image/common/favicon/favicon-16x16.png">
+	<link rel="manifest" href="./../common/image/common/favicon/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="./../common/image/common/favicon/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	<!--// favicon -->
+
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://example.com/page.html">
+	<meta property="og:title" content="Content Title">
+	<meta property="og:image" content="https://example.com/image.jpg">
+	<meta property="og:description" content="Description Here">
+	<meta property="og:site_name" content="Site Name">
+	<meta property="og:locale" content="en_US">
+	<!-- 다음의 태그는 필수는 아니지만, 포함하는 것을 추천함 -->
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="630">
+	<!-- naver 블로그, 카카오톡 미리보기 설정 -->
+	<meta property="og:title" content="콘텐츠 제목" /> 
+	<meta property="og:url" content="웹페이지 URL" />
+	<meta property="og:type" content="웹페이지 타입(blog, website 등)" />
+	<meta property="og:image" content="표시되는 이미지" /> 
+	<meta property="og:title" content="웹사이트 이름" /> 
+	<meta property="og:description" content="웹페이지 설명" /> 
+	<!-- 트위터 미리보기 -->
+	<meta name="twitter:card" content="트위터 카드 타입(요약정보, 사진, 비디오)" /> 
+	<meta name="twitter:title" content="콘텐츠 제목" /> 
+	<meta name="twitter:description" content="웹페이지 설명" /> 
+	<meta name="twitter:image" content="표시되는 이미지 " /> 
+	<!-- 모바일 앱 미리보기 설정 -->
+	<!-- iOS -->
+	<meta property="al:ios:url" content=" ios 앱 URL" />
+	<meta property="al:ios:app_store_id" content="ios 앱스토어 ID" /> 
+	<meta property="al:ios:app_name" content="ios 앱 이름" /> 
+	<!-- Android -->
+	<meta property="al:android:url" content="안드로이드 앱 URL" />
+	<meta property="al:android:app_name" content="안드로이드 앱 이름" />
+	<meta property="al:android:package" content="안드로이드 패키지 이름" /> 
+	<meta property="al:web:url" content="안드로이드 앱 URL" />
+
 
 	<link rel="stylesheet" href="./../common/css/ui.common.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -24,7 +78,7 @@
 				└ .g_ex :
 				└ .g_code :
 				└ .g_code.meno :
-	 -->
+	-->
 	<div id="wrap" class="layout">
 		<h1 class="title">🌊COLA 레이아웃 가이드</h1>
 		<main id="main">
@@ -132,7 +186,7 @@
 									<td>사진</td>
 								</tr>
 								<tr>
-									<td>/picture/chap</td>
+									<td>/picture/chapt</td>
 									<td>챕터별</td>
 								</tr>
 								<tr>
@@ -151,42 +205,30 @@
 			<div class="g_wrap">
 				<h2>폰트</h2>
 				<div class="g_cont">
+					<div class="g_tit">Font Size</div>
 					<p class="g_ex">class="h_40"</p>
-					<strong class="h_40">COLA 타이틀 스타일</strong>
-				</div>
-				<div class="g_cont">
+					<strong class="h_40">COLA 타이틀 스타일 ABC123</strong>
 					<p class="g_ex">class="h_34"</p>
-					<strong class="h_34">COLA 타이틀 스타일</strong>
-				</div>
-				<div class="g_cont">
+					<strong class="h_34">COLA 타이틀 스타일 ABC123</strong>
 					<p class="g_ex">class="h_28"</p>
-					<strong class="h_28">COLA 타이틀 스타일</strong>
-				</div>
-				<div class="g_cont">
+					<strong class="h_28">COLA 타이틀 스타일 ABC123</strong>
 					<p class="g_ex">class="h_24"</p>
-					<strong class="h_24">COLA 타이틀 스타일</strong>
-				</div>
-				<div class="g_cont">
+					<strong class="h_24">COLA 타이틀 스타일 ABC123</strong>
 					<p class="g_ex">class="h_18"</p>
-					<strong class="h_18">COLA 타이틀 스타일</strong>
-				</div>
-				<div class="g_cont">
-					<p class="g_ex">class=""</p>
-					<p class="">필기체 스타일</p>
-				</div>
-				<div class="g_cont">
+					<strong class="h_18">COLA 타이틀 스타일 ABC123</strong>
 					<p class="g_ex">기본</p>
-					<p class="">본문 스타일</p>
+					<p class="">본문 스타일 ABC123</p>
 				</div>
 				<div class="g_cont">
+					<div class="g_tit">Font Style</div>
+					<p class="g_ex">class=""</p>
+					<p class="">필기체 스타일 ABC123</p>
+					<p class="g_ex">class=""</p>
+					<p class="">코드식영문 스타일 ABC123</p>
 					<p class="g_ex">span class=""</p>
 					<p class="">문장 전체가 아닌 <span>키워드</span> 혹은 <span>중요단어</span>, <span>문장</span>에 색이 들어갈 수 있습니다.</p>
-				</div>
-				<div class="g_cont">
 					<p class="g_ex">class=""</p>
 					<p class="">기울기가 들어간 텍스트입니다.</p>
-				</div>
-				<div class="g_cont">
 					<p class="g_ex">class=""</p>
 					<p class="">바탕색이 있는 텍스트입니다.</p>
 				</div>
@@ -429,25 +471,92 @@
 				<div class="g_cont">
 					<p class="g_tit">기본</p>
 					<button type="button">버튼</button>
+				</div>
+				<div class="g_cont">
 					<p class="g_tit"></p>
 					<button type="button">버튼</button>
+				</div>
+				<div class="g_cont">
 					<p class="g_tit">이미지 팝업일 경우</p>
 					<button type="button">버튼</button>
 				</div>
 			</div>
+
+			<div class="g_wrap">
+				<h2>아이콘</h2>
+				<div class="g_cont">
+					<div class="g_code">
+						<strong class="meno">아이콘 제작 시 다음과 같은 규칙을 적용한다.</strong>
+						<ul class="g_code list">
+							<li>60*60px 크기를 기준으로 작업한다.</li>
+							<li class="theme_color">
+								통칭 COLA의 테마색상은 다음과 같다.
+								<span style="color: #F2F2F2; background: #050A26;">#050A26</span>
+								<span style="background: #048ABF;">#048ABF</span>
+								<span style="background: #F2F2F2;">#F2F2F2</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="g_cont">
+					<p class="g_tit">16px</p>
+					<div class="icon_wrap i_16">
+						<img src="./../common/image/common/safenet_icon01.svg" alt="">
+						<img src="./../common/image/common/safenet_icon02.svg" alt="">
+						<img src="./../common/image/common/safenet_icon03.svg" alt="">
+						<img src="./../common/image/common/safenet_icon04.svg" alt="">
+					</div>
+				</div>
+				<div class="g_cont">
+					<p class="g_tit">32px</p>
+					<div class="icon_wrap i_32">
+						<img src="./../common/image/common/safenet_icon01.svg" alt="">
+						<img src="./../common/image/common/safenet_icon02.svg" alt="">
+						<img src="./../common/image/common/safenet_icon03.svg" alt="">
+						<img src="./../common/image/common/safenet_icon04.svg" alt="">
+					</div>
+				</div>
+				<div class="g_cont">
+					<p class="g_tit">38px</p>
+					<div class="icon_wrap i_38">
+						<img src="./../common/image/common/safenet_icon01.svg" alt="">
+						<img src="./../common/image/common/safenet_icon02.svg" alt="">
+						<img src="./../common/image/common/safenet_icon03.svg" alt="">
+						<img src="./../common/image/common/safenet_icon04.svg" alt="">
+					</div>
+				</div>
+				<div class="g_cont">
+					<p class="g_tit">42px</p>
+					<div class="icon_wrap i_42">
+						<img src="./../common/image/common/safenet_icon01.svg" alt="">
+						<img src="./../common/image/common/safenet_icon02.svg" alt="">
+						<img src="./../common/image/common/safenet_icon03.svg" alt="">
+						<img src="./../common/image/common/safenet_icon04.svg" alt="">
+					</div>
+				</div>
+				<div class="g_cont">
+					<p class="g_tit">60px</p>
+					<div class="icon_wrap i_60">
+						<img src="./../common/image/common/safenet_icon01.svg" alt="">
+						<img src="./../common/image/common/safenet_icon02.svg" alt="">
+						<img src="./../common/image/common/safenet_icon03.svg" alt="">
+						<img src="./../common/image/common/safenet_icon04.svg" alt="">
+					</div>
+				</div>
+			</div>
 			<!-- 팝업 -->
-			<section class="layer_pop">
+			<!-- <section class="layer_pop">
 				<div class="cont">
 
 				</div>
 				<div class="btn_wrap">
 					<a href="#none">닫기</a>
 				</div>
-			</section>
+			</section> -->
 			<!-- 팝업 -->
 
 			<!-- 팝업 -->
-			<section class="layer_pop">
+			<!-- <section class="layer_pop">
 				<div class="cont">
 
 				</div>
@@ -455,18 +564,18 @@
 					<a href="#none">닫기</a>
 					<a href="#none">확인</a>
 				</div>
-			</section>
+			</section> -->
 			<!-- 팝업 -->
 			
 			<!-- 팝업 -->
-			<section class="layer_pop img_pop">
+			<!-- <section class="layer_pop img_pop">
 				<div class="cont">
 
 				</div>
 				<div class="btn_wrap">
 					<a href="#none">닫기</a>
 				</div>
-			</section>
+			</section> -->
 			<!-- 팝업 -->
 		</main>
 		<script>

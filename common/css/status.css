@@ -55,12 +55,16 @@
 .g_wrap .g_cont {margin: 10px 10px 0;}
 .g_wrap .g_cont ~ .g_cont {margin-top: 30px;}
 .g_wrap .g_cont .g_ex {margin: 10px 0;}
-.g_wrap .g_cont p {line-height: 1.2;}
 .g_wrap .g_cont .g_code {background: #EAEAEA; padding: 10px; margin-bottom: 20px;}
-.g_wrap .g_cont .g_code.meno::before {content: "*";}
+.g_wrap .g_cont .meno::before {content: "*";}
+.g_wrap .g_cont .list li::before {content: "· ";}
 .g_wrap .g_cont .g_table {margin-bottom: 20px;}
 .g_wrap .g_cont .g_table th,
 .g_wrap .g_cont .g_table td {width: calc(100% / 2); text-align: left; padding: 10px 0; border-bottom: 1px solid #0A0279;}
 .g_wrap .g_cont .g_table tbody td{font-size: 14px; color: #111111;}
+
+/* 아이콘 */
+.g_wrap .icon_wrap {display: flex; flex-wrap: wrap; align-items: center;}
+.g_wrap .icon_wrap img {margin-right: 5px;}
 
 /*------------------------------ [  ] ------------------------------*/
