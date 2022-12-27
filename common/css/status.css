@@ -31,13 +31,14 @@
 .comment .more_detail.open {height: auto;}
 .comment .more_detail strong {display: block; background: #8eaeeb;}
 
-.comment .vital {text-align: center; padding: 5px 0; margin: 5px 0; border-top: 1px solid #2503e2; border-bottom: 1px solid #2503e2;}
+.comment .vital {text-align: center; padding: 5px 0; margin: 5px 0;}
 
 /* 프로젝트별 코멘트 아이콘 */
 .cola .comment p::before,
 .cola .comment strong::before {content: "💧 ";}
 .cola .comment .vital::after {content: " 💧";}
 
+.cola .comment .vital {border-top: 1px solid #2503e2; border-bottom: 1px solid #2503e2;}
 
 /*------------------------------ [ 레이아웃 가이드 ] ------------------------------*/
 
@@ -49,12 +50,14 @@
 .g_wrap {}
 .g_wrap ~ .g_wrap {margin-top: 30px;}
 .g_wrap strong {font-weight: 600;}
-.g_wrap .g_tit {display: block; font-size: 18px; line-height: 26px; font-weight: 500; margin-bottom: 10px;}
+.g_wrap .g_tit {display: block; font-size: 18px; line-height: 26px; font-weight: 500; margin: 10px 0;}
 .g_wrap .g_tit::before {content: "💡 ";}
 .g_wrap .g_cont {margin: 10px 10px 0;}
 .g_wrap .g_cont ~ .g_cont {margin-top: 30px;}
-.g_wrap .g_cont p {line-height: 22px;}
+.g_wrap .g_cont .g_ex {margin: 10px 0;}
+.g_wrap .g_cont p {line-height: 1.2;}
 .g_wrap .g_cont .g_code {background: #EAEAEA; padding: 10px; margin-bottom: 20px;}
+.g_wrap .g_cont .g_code.meno::before {content: "*";}
 .g_wrap .g_cont .g_table {margin-bottom: 20px;}
 .g_wrap .g_cont .g_table th,
 .g_wrap .g_cont .g_table td {width: calc(100% / 2); text-align: left; padding: 10px 0; border-bottom: 1px solid #0A0279;}

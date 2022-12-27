@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link rel="stylesheet" href="./../common/css/ul.common.css">
+	<link rel="stylesheet" href="./../common/css/ui.common.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 	<!-- status 전용 -->
@@ -15,6 +15,16 @@
 	<!--// status 전용 -->
 </head>
 <body>
+	<!-- 
+		레이아웃 가이드 class 정리
+		.g_wrap : section
+			└ h2 :
+			└ .g_cont :
+				└ .g_tit :
+				└ .g_ex :
+				└ .g_code :
+				└ .g_code.meno :
+	 -->
 	<div id="wrap" class="layout">
 		<h1 class="title">🌊COLA 레이아웃 가이드</h1>
 		<main id="main">
@@ -23,20 +33,24 @@
 				<div class="g_cont">
 					<div class="g_tit">Mobile(767px 이하)</div>
 					<div class="g_code">@media all and (max-width: 767px) and (min-width: 320px)</div>
+				</div>
+				<div class="g_cont">
 					<div class="g_tit">Tablet(768px ~ 1023px)</div>
 					<div class="g_code">@media all and (max-width: 1023px) and (min-width: 768px)</div>
+				</div>
+				<div class="g_cont">
 					<div class="g_tit">PC(1024px 이상)</div>
 					<div class="g_code">PC 최소 너비 : 1024px</div>
-
 				</div>
 			</div>
 			<div class="g_wrap">
 				<h2>디렉토리 구조 및 파일 구성 명명 규칙</h2>
 				<div class="g_cont">
-					<p class="g_code">
-						* 모든 디렉토리명과 파일명은 한글 사용 금지하며 영문, 소문자로 통인한다. <strong>(숫자 및 언더바(_) 사용가능)</strong><br>
+					<p class="g_code meno">모든 디렉토리명과 파일명은 한글 사용 금지하며 영문, 소문자로 통인한다. <strong>(숫자 및 언더바(_) 사용가능)</strong><br>
 						ex) btn_tab01.png, main_page.html
 					</p>
+				</div>
+				<div class="g_cont">
 					<strong class="g_tit">디렉토리 구조도(html)</strong>
 					<div class="g_table">
 						<table>
@@ -48,12 +62,18 @@
 							</thead>
 							<tbody>
 								<tr>
-									<td>/main</td>
+									<td>/main/</td>
 									<td>메인</td>
+								</tr>
+								<tr>
+									<td>//</td>
+									<td></td>
 								</tr>
 							</tbody>
 						</table>
 					</div>
+				</div>
+				<div class="g_cont">
 					<strong class="g_tit">디렉토리 구조도(css)</strong>
 					<div class="g_table">
 						<table>
@@ -65,12 +85,14 @@
 							</thead>
 							<tbody>
 								<tr>
-									<td></td>
-									<td></td>
+									<td>/css/ui.common.css</td>
+									<td>공통 css</td>
 								</tr>
 							</tbody>
 						</table>
 					</div>
+				</div>
+				<div class="g_cont">
 					<strong class="g_tit">디렉토리 구조도(js)</strong>
 					<div class="g_table">
 						<table>
@@ -88,7 +110,10 @@
 							</tbody>
 						</table>
 					</div>
+				</div>
+				<div class="g_cont">
 					<strong class="g_tit">디렉토리 구조도(image)</strong>
+					<p class="g_code meno">image 이름 설정 : </p>
 					<div class="g_table">
 						<table>
 							<thead>
@@ -107,6 +132,10 @@
 									<td>사진</td>
 								</tr>
 								<tr>
+									<td>/picture/chap</td>
+									<td>챕터별</td>
+								</tr>
+								<tr>
 									<td>/char/</td>
 									<td>캐릭터</td>
 								</tr>
@@ -122,21 +151,43 @@
 			<div class="g_wrap">
 				<h2>폰트</h2>
 				<div class="g_cont">
-					<p>class=""</p>
-					<p class="">COLA 타이틀 스타일</p>
-					<p>class=""</p>
-					<p class="">COLA 타이틀 스타일</p>
-					<p>class=""</p>
-					<p class="">COLA 타이틀 스타일</p>
-					<p>class=""</p>
-					<p class="">COLA 타이틀 스타일</p>
-					<p>class=""</p>
+					<p class="g_ex">class="h_40"</p>
+					<strong class="h_40">COLA 타이틀 스타일</strong>
+				</div>
+				<div class="g_cont">
+					<p class="g_ex">class="h_34"</p>
+					<strong class="h_34">COLA 타이틀 스타일</strong>
+				</div>
+				<div class="g_cont">
+					<p class="g_ex">class="h_28"</p>
+					<strong class="h_28">COLA 타이틀 스타일</strong>
+				</div>
+				<div class="g_cont">
+					<p class="g_ex">class="h_24"</p>
+					<strong class="h_24">COLA 타이틀 스타일</strong>
+				</div>
+				<div class="g_cont">
+					<p class="g_ex">class="h_18"</p>
+					<strong class="h_18">COLA 타이틀 스타일</strong>
+				</div>
+				<div class="g_cont">
+					<p class="g_ex">class=""</p>
+					<p class="">필기체 스타일</p>
+				</div>
+				<div class="g_cont">
+					<p class="g_ex">기본</p>
 					<p class="">본문 스타일</p>
-					<p>기본</p>
-					<p class="">본문 스타일</p>
-					<p>span class=""</p>
+				</div>
+				<div class="g_cont">
+					<p class="g_ex">span class=""</p>
 					<p class="">문장 전체가 아닌 <span>키워드</span> 혹은 <span>중요단어</span>, <span>문장</span>에 색이 들어갈 수 있습니다.</p>
+				</div>
+				<div class="g_cont">
+					<p class="g_ex">class=""</p>
 					<p class="">기울기가 들어간 텍스트입니다.</p>
+				</div>
+				<div class="g_cont">
+					<p class="g_ex">class=""</p>
 					<p class="">바탕색이 있는 텍스트입니다.</p>
 				</div>
 				<div class="g_cont">
@@ -150,42 +201,277 @@
 			</div>
 
 			<div class="g_wrap">
-				<h2>선택지</h2>
-				<div class="g_cont box">
-					<p></p>
-					<p></p>
-					
-				</div>
-			</div>
-
-			<div class="g_wrap">
 				<h2>이미지</h2>
-				<div class="g_cont box">
-					<p></p>
-					<p></p>
-					
+				<div class="g_cont">
+					<p class="g_code meno">이미지는 기본적으로 중앙에 배치</p>
+				</div>
+				<div class="g_cont">
+					<strong class="g_tit">너비 100%</strong>
+					<p class="g_ex">기본 : class="img_wrap"</p>
+					<div class="img_wrap">
+						<img src="./../common/image/picture/test_img.jpg" alt="테스트 이미지">
+					</div>
+				</div>
+				<div class="g_cont">
+					<strong class="g_tit">너비 50%</strong>
+					<p class="g_ex">class="w_50"</p>
+					<div class="img_wrap w_50">
+						<img src="./../common/image/picture/test_img.jpg" alt="테스트 이미지">
+					</div>
+				</div>
+				<div class="g_cont">
+					<strong class="g_tit">2개 이상일 경우</strong>
+					<p class="g_ex">class=""</p>
+					<div class="img_wrap grid_2">
+						<img src="./../common/image/picture/test_img.jpg" alt="테스트 이미지">
+						<img src="./../common/image/picture/test_img.jpg" alt="테스트 이미지">
+					</div>
+				</div>
+				<div class="g_cont">
+					<string class="g_tit">이미지가 4개 이상일 경우</string>
+					<p class="g_ex">class=""</p>
+					<div class="img_wrap grid_4">
+						<img src="./../common/image/picture/test_img.jpg" alt="테스트 이미지">
+						<img src="./../common/image/picture/test_img.jpg" alt="테스트 이미지">
+						<img src="./../common/image/picture/test_img.jpg" alt="테스트 이미지">
+						<img src="./../common/image/picture/test_img.jpg" alt="테스트 이미지">
+					</div>
+				</div>
+				<div class="g_cont">
+					<strong class="g_tit">이미지가 나란히 있을 경우</strong>
+					<p class="g_ex">class=""</p>
+					<div class="img_wrap grid_gap_none">
+						<img src="./../common/image/picture/test_img.jpg" alt="테스트 이미지">
+						<img src="./../common/image/picture/test_img.jpg" alt="테스트 이미지">
+						<img src="./../common/image/picture/test_img.jpg" alt="테스트 이미지">
+						<img src="./../common/image/picture/test_img.jpg" alt="테스트 이미지">
+					</div>
 				</div>
 			</div>
 
 			<div class="g_wrap">
-				<h2>팝업</h2>
-				<div class="g_cont box">
-					<p class="g_tit">기본</p>
-					<button type="button">버튼</button>
-					<p class="g_tit">이미지 팝업일 경우</p>
-					<button type="button">버튼</button>
+				<h2>선택지</h2>
+				<div class="g_cont">
+					<p class="g_ex">class=""</p>
+					<div class="select_wrap">
+						<select name="" id="">
+							<option value="" selected>기본</option>
+							<option value="">선택1</option>
+							<option value="">선택2</option>
+							<option value="">선택3</option>
+						</select>
+						<select name="" id="" disabled>
+							<option value="" selected>비활성화</option>
+							<option value="">선택1</option>
+							<option value="">선택2</option>
+							<option value="">선택3</option>
+						</select>
+					</div>
+				</div>
+				<div class="g_cont">
+					<p class="g_ex">class=""</p>
+					<div class="select_wrap">
+						<select name="" id="">
+							<option value="" selected>기본</option>
+							<option value="">선택1</option>
+							<option value="">선택2</option>
+							<option value="">선택3</option>
+						</select>
+						<select name="" id="" disabled>
+							<option value="" selected>비활성화</option>
+							<option value="">선택1</option>
+							<option value="">선택2</option>
+							<option value="">선택3</option>
+						</select>
+					</div>
+				</div>
+			</div>
+
+			<div class="g_wrap">
+				<h2>체크박스</h2>
+				<div class="g_cont">
+					<p class="g_ex">class=""</p>
+					<div class="input_wrap chk">
+						<label for="">
+							<input type="checkbox" name="" id="">
+							<span>기본</span>
+						</label>
+						<label for="">
+							<input type="checkbox" name="" id="">
+							<span>활성화</span>
+						</label>
+						<label for="">
+							<input type="checkbox" name="" id="">
+							<span>비활성화</span>
+						</label>
+					</div>
+				</div>
+				<div class="g_cont">
+					<p class="g_ex">class=""</p>
+					<div class="input_wrap chk">
+						<label for="">
+							<input type="checkbox" name="" id="">
+							<span class="icon">아이콘 + 텍스트</span>
+						</label>
+					</div>
+				</div>
+			</div>
+
+			<div class="g_wrap">
+				<h2>라디오</h2>
+				<div class="g_cont">
+					<p class="g_ex">class=""</p>
+					<div class="input_wrap radio">
+						<label for="">
+							<input type="radio" name="" id="">
+							<span>기본</span>
+						</label>
+						<label for="">
+							<input type="radio" name="" id="">
+							<span>활성화</span>
+						</label>
+						<label for="">
+							<input type="radio" name="" id="">
+							<span>비활성화</span>
+						</label>
+					</div>
+				</div>
+				<div class="g_cont">
+					<p class="g_ex">class=""</p>
+					<div class="input_wrap radio">
+						<label for="">
+							<input type="radio" name="" id="">
+							<span class="icon">아이콘 + 텍스트</span>
+						</label>
+					</div>
+				</div>
+			</div>
+
+			<div class="g_wrap">
+				<h2>input</h2>
+				<div class="g_cont">
+					<p class="g_ex">class=""</p>
+					<div class="input_wrap">
+						<input type="text" name="" placeholder="기본">
+						<input type="text" name="" placeholder="비활성화" readonly>
+					</div>
+				</div>
+				<div class="g_cont">
+					<p class="g_ex">class=""</p>
+					<div class="input_wrap">
+						<input type="text" name="" placeholder="입력에러메세지">
+						<div class="msg_wrap">
+							<p class="wrn">잘못된 입력입니다.</p>
+							<p class="wrn">다시 한번 확인해주세요</p>
+							<p class="success">확인되었습니다.</p>
+						</div>
+					</div>
 				</div>
 			</div>
 
 			<div class="g_wrap">
 				<h2>버튼</h2>
-				<div class="g_cont box">
-					<p></p>
-					<p></p>
-					
+				<div class="g_cont">
+					<strong class="g_tit">기본</strong>
+					<p class="g_ex">class=""</p>
+					<div class="btn_wrap">
+						<a href="#none">버튼</a>
+						<a href="#none">a태그 비활성화 버튼</a>
+						<button>type 버튼 비활성화</button>
+					</div>
+				</div>
+				<div class="g_cont">
+					<strong class="g_tit">색상별 버튼</strong>
+					<p class="g_ex">class=""</p>
+					<div class="btn_wrap">
+						<a href="#none">버튼</a>
+						<a href="#none">버튼</a>
+						<a href="#none">버튼</a>
+						<a href="#none">버튼</a>
+						<a href="#none">버튼</a>
+					</div>
+				</div>
+				<div class="g_cont">
+					<strong class="g_tit">버튼 크기</strong>
+					<p class="g_ex">class=""</p>
+					<div class="btn_wrap">
+						<a href="#none">기본 버튼</a>
+						<a href="#none">너비 30%</a>
+						<a href="#none">너비 500%</a>
+						<a href="#none">너비 100%</a>
+						<a href="#none">높이 px</a>
+						<a href="#none">높이 px</a>
+						<a href="#none">높이 px</a>
+					</div>
+				</div>
+				<div class="g_cont">
+					<strong class="g_tit">슬라이드, 다음이전 버튼</strong>
+					<p class="g_ex">class=""</p>
+					<div class="btn_wrap">
+						<button type="button">이전</button>
+						<button type="button">다음</button>
+						<button type="button">이전 icon</button>
+						<button type="button">다음 icon</button>
+					</div>
+				</div>
+				<div class="g_cont">
+					<strong class="g_tit">2개 이상 버튼</strong>
+					<p class="g_ex">class=""</p>
+					<div class="btn_wrap">
+						<a href="#none">버튼</a>
+						<a href="#none">버튼</a>
+					</div>
 				</div>
 			</div>
+			
+			<div class="g_wrap">
+				<h2>팝업</h2>
+				<div class="g_cont">
+					<p class="g_tit">기본</p>
+					<button type="button">버튼</button>
+					<p class="g_tit"></p>
+					<button type="button">버튼</button>
+					<p class="g_tit">이미지 팝업일 경우</p>
+					<button type="button">버튼</button>
+				</div>
+			</div>
+			<!-- 팝업 -->
+			<section class="layer_pop">
+				<div class="cont">
+
+				</div>
+				<div class="btn_wrap">
+					<a href="#none">닫기</a>
+				</div>
+			</section>
+			<!-- 팝업 -->
+
+			<!-- 팝업 -->
+			<section class="layer_pop">
+				<div class="cont">
+
+				</div>
+				<div class="btn_wrap">
+					<a href="#none">닫기</a>
+					<a href="#none">확인</a>
+				</div>
+			</section>
+			<!-- 팝업 -->
+			
+			<!-- 팝업 -->
+			<section class="layer_pop img_pop">
+				<div class="cont">
+
+				</div>
+				<div class="btn_wrap">
+					<a href="#none">닫기</a>
+				</div>
+			</section>
+			<!-- 팝업 -->
 		</main>
+		<script>
+			
+		</script>
 	</div>
 </body>
 </html>

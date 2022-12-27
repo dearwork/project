@@ -22,3 +22,21 @@ table {border-collapse: collapse; border-spacing: 0; width: 100%;}
 caption{visibility:hidden; height:0px; overflow:hidden; font-size:0;}
 a { text-decoration: none; color: #000;}
 /* --------------------------------// [RESET] -------------------------------- */
+
+/* --------------------------------[공통] -------------------------------- */
+
+/* 타이틀 크기 */
+.h_40 {font-size: 40px;}
+.h_34 {font-size: 34px;}
+.h_28 {font-size: 28px;}
+.h_24 {font-size: 24px;}
+.h_18 {font-size: 18px;}
+
+/* 색상 */
+
+
+/* 이미지 */
+.img_wrap img {display: block; width: 100%; vertical-align: bottom;}
+.img_wrap.w_50 img {width: 50%;}
+
+/* --------------------------------// [공통] -------------------------------- */
