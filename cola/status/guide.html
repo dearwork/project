@@ -61,7 +61,9 @@
 
 
 	<link rel="stylesheet" href="./../common/css/ui.common.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+	<script src="./../common/js/common/jquery-3.6.0.js"></script>
+	<script src="./../common/js/common/jquery.min.js"></script>
 
 	<!-- status 전용 -->
 	<link rel="stylesheet" href="./../../common/css/status.css">
@@ -81,6 +83,23 @@
 	-->
 	<div id="wrap" class="layout">
 		<h1 class="title">🌊COLA 레이아웃 가이드</h1>
+		<div class="tab_menu swiper">
+			<ul class="swiper-wrapper">
+				<li class="swiper-slide on"><a href="#none">홈페이지 반응형 및 CSS 작성</a></li>
+				<li class="swiper-slide"><a href="#none">디렉토리 구조 및 파일 구성 명명 규칙</a></li>
+				<li class="swiper-slide"><a href="#none">폰트</a></li>
+				<li class="swiper-slide"><a href="#none">이미지</a></li>
+				<li class="swiper-slide"><a href="#none">선택지</a></li>
+				<li class="swiper-slide"><a href="#none">체크박스</a></li>
+				<li class="swiper-slide"><a href="#none">라디오</a></li>
+				<li class="swiper-slide"><a href="#none">input</a></li>
+				<li class="swiper-slide"><a href="#none">버튼</a></li>
+				<li class="swiper-slide"><a href="#none">팝업</a></li>
+				<li class="swiper-slide"><a href="#none">Box Style</a></li>
+				<li class="swiper-slide"><a href="#none">아이콘</a></li>
+				<li class="swiper-slide"><a href="#none">아이콘 + 텍스트</a></li>
+			</ul>
+		</div>
 		<main id="main">
 			<div class="g_wrap">
 				<h2>홈페이지 반응형 구분 및 CSS 작성</h2>
@@ -483,11 +502,19 @@
 			</div>
 
 			<div class="g_wrap">
+				<h2>Box Style</h2>
+				<div class="g_cont">
+					<div class="g_tit"></div>
+					<div class="">기본</div>
+				</div>
+			</div>
+
+			<div class="g_wrap">
 				<h2>아이콘</h2>
 				<div class="g_cont">
 					<div class="g_code">
 						<strong class="meno">아이콘 제작 시 다음과 같은 규칙을 적용한다.</strong>
-						<ul class="g_code list">
+						<ul class="list">
 							<li>60*60px 크기를 기준으로 작업한다.</li>
 							<li class="theme_color">
 								통칭 COLA의 테마색상은 다음과 같다.
@@ -495,6 +522,7 @@
 								<span style="background: #048ABF;">#048ABF</span>
 								<span style="background: #F2F2F2;">#F2F2F2</span>
 							</li>
+							<li>모서리 둥글게 작업한다. (border-radius : 8px)</li>
 						</ul>
 					</div>
 				</div>
@@ -544,6 +572,11 @@
 					</div>
 				</div>
 			</div>
+			<div class="g_wrap">
+				<h2>아이콘 + 텍스트</h2>
+				<div class="g_tit"></div>
+
+			</div>
 			<!-- 팝업 -->
 			<!-- <section class="layer_pop">
 				<div class="cont">
@@ -578,8 +611,55 @@
 			</section> -->
 			<!-- 팝업 -->
 		</main>
+
+		<!-- 추후에 스와이프 플러그인 다운로드 -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.min.js"></script>
+		<!--// 추후에 스와이프 플러그인 다운로드 -->
 		<script>
-			
+
+		// tab_menu 보정하기 pc일때는 스와이프 제거
+		var swiper = new Swiper('.swiper', {
+            slidesPerView: 'auto',
+            preventClicks: true,
+            preventClicksPropagation: false,
+            observer: true,
+            observeParents: true
+        });
+        var $SwiperItem = $('.swiper .swiper-wrapper .swiper-slide a');
+			$SwiperItem.click(function(){
+            var target = $(this).parent();
+            $SwiperItem.parent().removeClass('on')
+            target.addClass('on');
+            muCenter(target);
+        })
+
+        function muCenter(target){
+            var snbwrap = $('.swiper .swiper-wrapper');
+            var targetPos = target.position();
+            var box = $('.swiper');
+            var boxHarf = box.width()/2;
+            var pos;
+            var listWidth=0;
+            
+            snbwrap.find('.swiper-slide').each(function(){ listWidth += $(this).outerWidth(); })
+            
+            var selectTargetPos = targetPos.left + target.outerWidth()/2;
+            if (selectTargetPos <= boxHarf) { // left
+                pos = 0;
+            }else if ((listWidth - selectTargetPos) <= boxHarf) { //right
+                pos = listWidth-box.width();
+            }else {
+                pos = selectTargetPos - boxHarf;
+            }
+            
+            setTimeout(function(){snbwrap.css({
+                "transform": "translate3d("+ (pos*-1) +"px, 0, 0)",
+                "transition-duration": "500ms"
+            })}, 200);
+        }
+		
 		</script>
 	</div>
 </body>

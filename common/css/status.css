@@ -42,10 +42,20 @@
 
 /*------------------------------ [ 레이아웃 가이드 ] ------------------------------*/
 
+#main {position: relative; padding-bottom: 30px;}
 .layout {min-width: 320px; margin: 0 auto;}
 
 .layout h1 {margin-bottom: 30px;}
 .layout h2 {padding-left: 10px; font-size: 24px; line-height: 32px; font-weight: 500; color: #0A0279; background: #77ADFF; margin-bottom: 10px;}
+
+/* tab_menu */
+.tab_menu {position: sticky; width: 100%; top: 0; background: #EAEAEA; z-index: 10; overflow: hidden;}
+.tab_menu ul {display: flex; width: 100%; padding: 0 15px; box-sizing: border-box; white-space: nowrap;}
+.tab_menu ul li {height: 50px; line-height: 50px;}
+.tab_menu ul li.on {font-weight: 600; border-bottom: 2px solid #252525;}
+.tab_menu ul li a {display: block; height: 100%; padding: 0 10px; text-align: center;}
+.tab_menu ul li.swiper-slide {width: auto !important;}
+
 
 .g_wrap {}
 .g_wrap ~ .g_wrap {margin-top: 30px;}
