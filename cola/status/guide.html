@@ -61,9 +61,6 @@
 
 
 	<link rel="stylesheet" href="./../common/css/ui.common.css">
-	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
-	<script src="./../common/js/common/jquery-3.6.0.js"></script>
-	<script src="./../common/js/common/jquery.min.js"></script>
 
 	<!-- status 전용 -->
 	<link rel="stylesheet" href="./../../common/css/status.css">
@@ -79,29 +76,30 @@
 				└ .g_tit :
 				└ .g_ex :
 				└ .g_code :
-				└ .g_code.meno :
+				└ .g_code.memo :
 	-->
-	<div id="wrap" class="layout">
+	<div id="wrap" class="layout cola">
 		<h1 class="title">🌊COLA 레이아웃 가이드</h1>
-		<div class="tab_menu swiper">
+		<div class="quick_menu swiper">
 			<ul class="swiper-wrapper">
-				<li class="swiper-slide on"><a href="#none">홈페이지 반응형 및 CSS 작성</a></li>
-				<li class="swiper-slide"><a href="#none">디렉토리 구조 및 파일 구성 명명 규칙</a></li>
-				<li class="swiper-slide"><a href="#none">폰트</a></li>
-				<li class="swiper-slide"><a href="#none">이미지</a></li>
-				<li class="swiper-slide"><a href="#none">선택지</a></li>
-				<li class="swiper-slide"><a href="#none">체크박스</a></li>
-				<li class="swiper-slide"><a href="#none">라디오</a></li>
-				<li class="swiper-slide"><a href="#none">input</a></li>
-				<li class="swiper-slide"><a href="#none">버튼</a></li>
-				<li class="swiper-slide"><a href="#none">팝업</a></li>
-				<li class="swiper-slide"><a href="#none">Box Style</a></li>
-				<li class="swiper-slide"><a href="#none">아이콘</a></li>
-				<li class="swiper-slide"><a href="#none">아이콘 + 텍스트</a></li>
+				<li class="swiper-slide on"><a href="#reaction_css">홈페이지 반응형 및 CSS 작성</a></li>
+				<li class="swiper-slide"><a href="#directory">디렉토리 구조 및 파일 구성 명명 규칙</a></li>
+				<li class="swiper-slide"><a href="#font">폰트</a></li>
+				<li class="swiper-slide"><a href="#image">이미지</a></li>
+				<li class="swiper-slide"><a href="#select">선택지</a></li>
+				<li class="swiper-slide"><a href="#checkbox">체크박스</a></li>
+				<li class="swiper-slide"><a href="#radio">라디오</a></li>
+				<li class="swiper-slide"><a href="#input">input</a></li>
+				<li class="swiper-slide"><a href="#button">버튼</a></li>
+				<li class="swiper-slide"><a href="#popup">팝업</a></li>
+				<li class="swiper-slide"><a href="#box">Box Style</a></li>
+				<li class="swiper-slide"><a href="#logo">LOGO</a></li>
+				<li class="swiper-slide"><a href="#icon">아이콘</a></li>
+				<li class="swiper-slide"><a href="#icon_txt">아이콘 + 텍스트</a></li>
 			</ul>
 		</div>
 		<main id="main">
-			<div class="g_wrap">
+			<div class="g_wrap" id="reaction_css">
 				<h2>홈페이지 반응형 구분 및 CSS 작성</h2>
 				<div class="g_cont">
 					<div class="g_tit">Mobile(767px 이하)</div>
@@ -116,10 +114,10 @@
 					<div class="g_code">PC 최소 너비 : 1024px</div>
 				</div>
 			</div>
-			<div class="g_wrap">
+			<div class="g_wrap" id="directory">
 				<h2>디렉토리 구조 및 파일 구성 명명 규칙</h2>
 				<div class="g_cont">
-					<p class="g_code meno">모든 디렉토리명과 파일명은 한글 사용 금지하며 영문, 소문자로 통인한다. <strong>(숫자 및 언더바(_) 사용가능)</strong><br>
+					<p class="g_code memo">모든 디렉토리명과 파일명은 한글 사용 금지하며 영문, 소문자로 통인한다. <strong>(숫자 및 언더바(_) 사용가능)</strong><br>
 						ex) btn_tab01.png, main_page.html
 					</p>
 				</div>
@@ -186,7 +184,7 @@
 				</div>
 				<div class="g_cont">
 					<strong class="g_tit">디렉토리 구조도(image)</strong>
-					<p class="g_code meno">image 이름 설정 : </p>
+					<p class="g_code memo">image 이름 설정 : </p>
 					<div class="g_table">
 						<table>
 							<thead>
@@ -221,7 +219,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="g_wrap">
+			<div class="g_wrap" id="font">
 				<h2>폰트</h2>
 				<div class="g_cont">
 					<div class="g_tit">Font Size</div>
@@ -239,11 +237,16 @@
 					<p class="">본문 스타일 ABC123</p>
 				</div>
 				<div class="g_cont">
-					<div class="g_tit">Font Style</div>
-					<p class="g_ex">class=""</p>
-					<p class="">필기체 스타일 ABC123</p>
-					<p class="g_ex">class=""</p>
-					<p class="">코드식영문 스타일 ABC123</p>
+					<div class="g_code memo">
+						<strong>폰트 스타일 주의사항 : 다음과 같이 폰트를 사용한다.</strong>
+						<ul class="list">
+							<li>Noto Sans Korean를 기본으로 사용한다. (영문의 경우 Noto Sans를 사용)</li>
+							<li>
+								다른 폰트를 사용해야할 경우 이미지를 사용하며 적용시킨다.<br>
+								※이미지 안 텍스트 내용이 길 경우 class="blind" 추가하여 이미지 아래에 따로 적어준다.
+							</li>
+						</ul>
+					</div>
 					<p class="g_ex">span class=""</p>
 					<p class="">문장 전체가 아닌 <span>키워드</span> 혹은 <span>중요단어</span>, <span>문장</span>에 색이 들어갈 수 있습니다.</p>
 					<p class="g_ex">class=""</p>
@@ -254,22 +257,29 @@
 				<div class="g_cont">
 					<strong class="g_tit">테마 색상</strong>
 					<p>상황을 설명할때, 기본적인 텍스트입니다.</p>
-					<p class="">투명도 있는, 희미하게 지나가는 상황일 경우 나타나는 텍스트입니다.</p>
-					<p class="">긍정적인 효과를 나타날때 나타나는 텍스트입니다.</p>
-					<p class="">무언가를 발견하거나, 힌트 또는 팁을 받을 때 나타나는 텍스트입니다.</p>
-					<p class="">위험한 상황, 혹은 불길한 무언가일 경우 텍스트입니다.</p>
+					<p class="">class="" : 투명도 있는, 희미하게 지나가는 상황일 경우 나타나는 텍스트입니다.</p>
+					<p class="">class="" : 긍정적인 효과를 나타날때 나타나는 텍스트입니다.</p>
+					<p class="">class="" : 무언가를 발견하거나, 힌트 또는 팁을 받을 때 나타나는 텍스트입니다.</p>
+					<p class="">class="" : 위험한 상황, 혹은 불길한 무언가일 경우 텍스트입니다.</p>
 				</div>
 			</div>
 
-			<div class="g_wrap">
+			<div class="g_wrap" id="image">
 				<h2>이미지</h2>
 				<div class="g_cont">
-					<p class="g_code meno">이미지는 기본적으로 중앙에 배치</p>
+					<p class="g_code memo">이미지는 기본적으로 중앙에 배치</p>
 				</div>
 				<div class="g_cont">
 					<strong class="g_tit">너비 100%</strong>
 					<p class="g_ex">기본 : class="img_wrap"</p>
 					<div class="img_wrap">
+						<img src="./../common/image/picture/test_img.jpg" alt="테스트 이미지">
+					</div>
+				</div>
+				<div class="g_cont">
+					<strong class="g_tit">너비 80%</strong>
+					<p class="g_ex">class="w_80"</p>
+					<div class="img_wrap w_80">
 						<img src="./../common/image/picture/test_img.jpg" alt="테스트 이미지">
 					</div>
 				</div>
@@ -281,16 +291,16 @@
 					</div>
 				</div>
 				<div class="g_cont">
-					<strong class="g_tit">2개 이상일 경우</strong>
-					<p class="g_ex">class=""</p>
+					<strong class="g_tit">2개일 경우</strong>
+					<p class="g_ex">class="grid_2"</p>
 					<div class="img_wrap grid_2">
 						<img src="./../common/image/picture/test_img.jpg" alt="테스트 이미지">
 						<img src="./../common/image/picture/test_img.jpg" alt="테스트 이미지">
 					</div>
 				</div>
 				<div class="g_cont">
-					<string class="g_tit">이미지가 4개 이상일 경우</string>
-					<p class="g_ex">class=""</p>
+					<string class="g_tit">4개일 경우</string>
+					<p class="g_ex">class="grid_4"</p>
 					<div class="img_wrap grid_4">
 						<img src="./../common/image/picture/test_img.jpg" alt="테스트 이미지">
 						<img src="./../common/image/picture/test_img.jpg" alt="테스트 이미지">
@@ -299,9 +309,9 @@
 					</div>
 				</div>
 				<div class="g_cont">
-					<strong class="g_tit">이미지가 나란히 있을 경우</strong>
-					<p class="g_ex">class=""</p>
-					<div class="img_wrap grid_gap_none">
+					<strong class="g_tit">간격이 있을 경우</strong>
+					<p class="g_ex">class="gap_10" 추가</p>
+					<div class="img_wrap grid_4 gap_10">
 						<img src="./../common/image/picture/test_img.jpg" alt="테스트 이미지">
 						<img src="./../common/image/picture/test_img.jpg" alt="테스트 이미지">
 						<img src="./../common/image/picture/test_img.jpg" alt="테스트 이미지">
@@ -310,7 +320,7 @@
 				</div>
 			</div>
 
-			<div class="g_wrap">
+			<div class="g_wrap" id="select">
 				<h2>선택지</h2>
 				<div class="g_cont">
 					<p class="g_ex">class=""</p>
@@ -348,7 +358,7 @@
 				</div>
 			</div>
 
-			<div class="g_wrap">
+			<div class="g_wrap" id="checkbox">
 				<h2>체크박스</h2>
 				<div class="g_cont">
 					<p class="g_ex">class=""</p>
@@ -378,7 +388,7 @@
 				</div>
 			</div>
 
-			<div class="g_wrap">
+			<div class="g_wrap" id="radio">
 				<h2>라디오</h2>
 				<div class="g_cont">
 					<p class="g_ex">class=""</p>
@@ -408,9 +418,10 @@
 				</div>
 			</div>
 
-			<div class="g_wrap">
+			<div class="g_wrap" id="input">
 				<h2>input</h2>
 				<div class="g_cont">
+					<stong class="g_tit"></stong>
 					<p class="g_ex">class=""</p>
 					<div class="input_wrap">
 						<input type="text" name="" placeholder="기본">
@@ -418,19 +429,20 @@
 					</div>
 				</div>
 				<div class="g_cont">
+					<stong class="g_tit"></stong>
 					<p class="g_ex">class=""</p>
 					<div class="input_wrap">
 						<input type="text" name="" placeholder="입력에러메세지">
 						<div class="msg_wrap">
 							<p class="wrn">잘못된 입력입니다.</p>
 							<p class="wrn">다시 한번 확인해주세요</p>
-							<p class="success">확인되었습니다.</p>
+							<p class="pass">확인되었습니다.</p>
 						</div>
 					</div>
 				</div>
 			</div>
 
-			<div class="g_wrap">
+			<div class="g_wrap" id="button">
 				<h2>버튼</h2>
 				<div class="g_cont">
 					<strong class="g_tit">기본</strong>
@@ -485,7 +497,7 @@
 				</div>
 			</div>
 			
-			<div class="g_wrap">
+			<div class="g_wrap" id="popup">
 				<h2>팝업</h2>
 				<div class="g_cont">
 					<p class="g_tit">기본</p>
@@ -501,7 +513,7 @@
 				</div>
 			</div>
 
-			<div class="g_wrap">
+			<div class="g_wrap" id="box">
 				<h2>Box Style</h2>
 				<div class="g_cont">
 					<div class="g_tit"></div>
@@ -509,8 +521,8 @@
 				</div>
 			</div>
 
-			<div class="g_wrap">
-				<h2>타이틀</h2>
+			<div class="g_wrap" id="logo">
+				<h2>LOGO</h2>
 				<div class="g_cont">
 					<strong class="g_tit">기본</strong>
 					<div class="img_wrap logo">
@@ -537,16 +549,17 @@
 				</div>
 			</div>
 
-			<div class="g_wrap">
+			<div class="g_wrap" id="icon">
 				<h2>아이콘</h2>
 				<div class="g_cont">
 					<div class="g_code">
-						<strong class="meno">아이콘 제작 시 다음과 같은 규칙을 적용한다.</strong>
+						<strong class="memo">아이콘 제작 시 다음과 같은 규칙을 적용한다.</strong>
 						<ul class="list">
 							<li>60*60px 크기를 기준으로 작업한다.</li>
 							<li class="theme_color">
 								통칭 COLA의 테마색상은 다음과 같다.
 								<span style="color: #F2F2F2; background: #050A26;">#050A26</span>
+								<span style="background: #0F639D;">#0F639D</span>
 								<span style="background: #048ABF;">#048ABF</span>
 								<span style="background: #F2F2F2;">#F2F2F2</span>
 							</li>
@@ -600,10 +613,12 @@
 					</div>
 				</div>
 			</div>
-			<div class="g_wrap">
+			<div class="g_wrap" id="icon_txt">
 				<h2>아이콘 + 텍스트</h2>
 				<div class="g_tit"></div>
-
+				<div class="icon_wrap box">
+					<i class="icon"></i>
+				</div>
 			</div>
 			<!-- 팝업 -->
 			<!-- <section class="layer_pop">
@@ -640,54 +655,117 @@
 			<!-- 팝업 -->
 		</main>
 
-		<!-- 추후에 스와이프 플러그인 다운로드 -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css">
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.min.js"></script>
-		<!--// 추후에 스와이프 플러그인 다운로드 -->
+		<script src="./../common/js/lib/jquery-3.6.3.min.js"></script>
+		<script src="./../common/js/lib/swiper-bundle.min.js"></script>
 		<script>
+			menuSwiper(); //퀵메뉴 스와이프
+			quickSeolMenu(); // 퀵메뉴 이동
+			
+			$(window).resize(function() {
+				menuSwiper(); //퀵메뉴 스와이프
+				quickSeolMenu(); // 퀵메뉴 이동
+			})
 
-		// tab_menu 보정하기 pc일때는 스와이프 제거
-		var swiper = new Swiper('.swiper', {
-            slidesPerView: 'auto',
-            preventClicks: true,
-            preventClicksPropagation: false,
-            observer: true,
-            observeParents: true
-        });
-        var $SwiperItem = $('.swiper .swiper-wrapper .swiper-slide a');
-			$SwiperItem.click(function(){
-            var target = $(this).parent();
-            $SwiperItem.parent().removeClass('on')
-            target.addClass('on');
-            muCenter(target);
-        })
+			// quickmenu - 스와이프
+			function menuSwiper(){
+				var quickMenuSlider = new Swiper(".quick_menu", {
+					direction : 'horizontal',
+					loop : false,
+					slidesPerView: 'auto',
+					preventClicks: true,
+					preventClicksPropagation: false,
+					observer: true,
+					observeParents: true,
+					roundLengths: true,
+					variableWidth: true
+				});
+			}
+			// 퀵메뉴 scroll
+			function quickSeolMenu(){ 
 
-        function muCenter(target){
-            var snbwrap = $('.swiper .swiper-wrapper');
-            var targetPos = target.position();
-            var box = $('.swiper');
-            var boxHarf = box.width()/2;
-            var pos;
-            var listWidth=0;
-            
-            snbwrap.find('.swiper-slide').each(function(){ listWidth += $(this).outerWidth(); })
-            
-            var selectTargetPos = targetPos.left + target.outerWidth()/2;
-            if (selectTargetPos <= boxHarf) { // left
-                pos = 0;
-            }else if ((listWidth - selectTargetPos) <= boxHarf) { //right
-                pos = listWidth-box.width();
-            }else {
-                pos = selectTargetPos - boxHarf;
-            }
-            
-            setTimeout(function(){snbwrap.css({
-                "transform": "translate3d("+ (pos*-1) +"px, 0, 0)",
-                "transition-duration": "500ms"
-            })}, 200);
-        }
-		
+				$('.quick_menu').css({'top': 0});
+
+				$(document).on('scroll', onScroll);
+
+				$('.quick_menu a').on('click', function (e) {
+					e.preventDefault();
+					$(document).off("scroll");
+					
+					$('.quick_menu a').each(function () {
+						$(this).parent('.quick_menu li').removeClass('on');
+					});
+					$(this).parent('.quick_menu li').addClass('on');
+					var navheight = $('.quick_menu').outerHeight();
+					var target = this.hash;
+					$target = $(target);
+					$('html, body').stop().animate({
+						'scrollTop': $target.offset().top - navheight 
+					}, 600, 'swing', function () {
+						$(document).on('scroll', onScroll);
+					});
+
+					moveTab();
+				});
+
+				function onScroll(event) {
+					var scrollPos = $(document).scrollTop();
+					var navheight = $('.quick_menu').outerHeight();
+
+					$('.quick_menu').css({'top': 0});
+
+					$('.quick_menu a').each(function () {
+						var currLink = $(this);
+						var refElement = $(currLink.attr('href'));
+						if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+							$('.quick_menu ul li').removeClass('on');
+							currLink.parent('.quick_menu li').addClass('on').siblings('li').removeClass('on');
+							moveTab();
+						} else {
+							currLink.parent('.quick_menu li').prevUntil('on');
+						}
+					});
+				}
+				}
+
+			function moveTab(){
+				$(".quick_menu > ul > li").each(function(){
+					if($(this).hasClass("on") === true){
+						var target = $(this);
+						scCenter(target);
+					}
+				});
+
+				// 클릭요소 중앙정렬
+				function scCenter(target){
+					var quickWrap = $('.quick_menu .swiper-wrapper');
+					var targetPos = target.position();
+					var boxWidth = $('.quick_menu').width();
+					var wrapWidth = 0;
+					var selectTargetPos = targetPos.left + target.outerWidth()/2;
+					var pos;
+					
+					quickWrap.find('.swiper-slide').each(function(){ 
+						wrapWidth += $(this).outerWidth(); 
+					})
+					
+					if (selectTargetPos <= boxWidth/2)  {
+						pos = 0;
+					} else if (wrapWidth - selectTargetPos <= boxWidth/2) {
+						pos = wrapWidth - boxWidth;
+					} else {
+						pos = targetPos.left - (boxWidth/2) + (target.outerWidth()/2) +25;
+					}
+
+					if(wrapWidth > boxWidth) {
+						setTimeout(function(){
+							quickWrap.css({
+							"transform": "translate3d("+ (pos*-1 -15) +"px, 0, 0)",
+							"transition-duration": "300ms"
+						})
+					}, 200);
+					};
+				};
+			};
 		</script>
 	</div>
 </body>

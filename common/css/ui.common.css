@@ -3,10 +3,8 @@
 /* -------------------------------- [font] -------------------------------- */
 /*font-family: 'Noto Sans KR', sans-serif;*//*기본 한글폰트*/
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
-/*font-family: 'Source Code Pro', monospace;*//*코드식 영문폰트*/
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400;500;600;800&display=swap');
-/*font-family: 'Water Brush', cursive;*//*필기체*/
-@import url('https://fonts.googleapis.com/css2?family=Water+Brush&display=swap');
+/*font-family: 'Noto Sans', sans-serif;*//*기본 영문폰트*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 /* --------------------------------// [font] -------------------------------- */
 
 /* -------------------------------- [RESET] -------------------------------- */

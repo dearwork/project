@@ -38,7 +38,7 @@
 	<meta property="al:android:package" content="안드로이드 패키지 이름" /> 
 	<meta property="al:web:url" content="안드로이드 앱 URL" />
 
-	<!-- <link rel="stylesheet" href="././common/css/ui.common.css"> -->
+	<link rel="stylesheet" href="././common/css/ui.common.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 	<!-- status 전용 -->
@@ -47,13 +47,16 @@
 
 </head>
 <body>
-	<div id="wrap">
+	<div id="wrap" class="project">
 		<h1 class="title">📁PROJECT</h1>
 		<div class="note">
-			<ol>
+			<ol class="notice">
 				<li>업데이트 관리자 : <strong>DEARWORKER</strong></li>
-				<li>SEVER LINK에는 깃허브 링크 첨부</li>
-				<li></li>
+				<li>
+					SEVER LINK에는 깃허브 링크 첨부<br>
+					※ 테이블에 표시되는 이름은 프로젝트명 + 서버링크
+				</li>
+				<li>DATE란에는 제작기간 작성하기</li>
 			</ol>
 		</div>
 		<nav class="tab_wrap">
@@ -64,65 +67,69 @@
 		</nav>
 		<main id="main">
 			<!-- COLA -->
-			<section class="work_section">
-				<table class="" border="1">
+			<section class="work_section cola">
+				<!-- table -->
+				<table>
 					<thead>
 						<tr>
-							
-							<th colspan="5">
-								<div class="img_wrap">
-									<img src="./cola/common/image/common/cola_logo.svg" alt="">
+							<th colspan="4">
+								<div class="img_wrap logo">
+									<img src="./cola/common/image/common/cola_logo.svg" alt="저주받은 오페라, 거짓말쟁이 방주">
 								</div>
-								<i class="icon"><img src="./cola/common/image/common/favicon/cola_favicon.svg" alt=""></i>
-								<p>Cursed opera, Lie on the Ark<br>(저주받은 오페라, 거짓말의 방주)</p>
+								<div class="icon_txt_wrap">
+									<span class="img_wrap favicon"><img src="./cola/common/image/common/favicon/cola_favicon.svg" alt=""></span>
+								<strong>The Cursed Opera, The Lier Ark<br>(저주받은 오페라, 거짓말쟁이 방주)</strong>
+								</div>
 							</th>
 						</tr>
 						<tr>
 							<td>keyword / SafeNet</td>
-							<td>description</td>
-							<td>name</td>
 							<td>status / sever link</td>
-							<td>note</td>
+							<td>name</td>
+							<td>date</td>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
 							<td class="keyword">
 								<span>실험</span>
+								<span>추리</span>
 								<span></span>
 							</td>
-							<td rowspan="2"></td>
-							<td rowspan="2">DEARWORKER</td>
 							<td>
-								<p><a target="_blank" href="./cola/status/status.html">./cola/status/status.html</a></p>
+								<a target="_blank" href="./cola/status/status.html">./cola/status/status.html</a>
 							</td>
+							<td rowspan="2">DEARWORKER</td>
 							<td rowspan="2">
-								<p>2022-12-26 status 및 가이드 제작</p>
+								<p>2022-12-26</p>
 							</td>
 						</tr>
 						<tr>
 							<td>
 								<div class="safenet_wrap">
-									<img src="./cola/common/image/common/safenet_icon01.svg" alt="15세이상">
-									<span>15세이상</span>
-								</div>
-								<div class="safenet_wrap">
-									<img src="./cola/common/image/common/safenet_icon02.svg" alt="조사/거래">
-									<span>조사/거래</span>
-								</div>
-								<div class="safenet_wrap">
-									<img src="./cola/common/image/common/safenet_icon03.svg" alt="부상/살해">
-									<span>부상/살해</span>
-								</div>
-								<div class="safenet_wrap">
-									<img src="./cola/common/image/common/safenet_icon04.svg" alt="폭력성">
-									<span>폭력성</span>
+									<div class="safenet_item">
+										<img src="./cola/common/image/common/safenet_icon01.svg" alt="15세이상">
+										<span>15세이상</span>
+									</div>
+									<div class="safenet_item">
+										<img src="./cola/common/image/common/safenet_icon02.svg" alt="조사/거래">
+										<span>조사/거래</span>
+									</div>
+									<div class="safenet_item">
+										<img src="./cola/common/image/common/safenet_icon03.svg" alt="부상/살해">
+										<span>부상/살해</span>
+									</div>
+									<div class="safenet_item">
+										<img src="./cola/common/image/common/safenet_icon04.svg" alt="폭력성">
+										<span>폭력성</span>
+									</div>
 								</div>
 							</td>
-							<td><a target="_blank" href="https://DEARWORKER.github.io/project/cola/main/home.html">COLA서버링크</a></td>
+							<td><a target="_blank" href="https://DEARWORKER.github.io/project/cola/main/home.html">COLA 서버링크</a></td>
 						</tr>
 					</tbody>
 				</table>
+				<!--// table -->
 
 				<div class="g_wrap">
 					<h2>작업내역 전달 및 소스관리</h2>
