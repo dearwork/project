@@ -19,19 +19,159 @@
 	<!--// status 전용 -->
 </head>
 <body>
-	<div id="wrap" class="">
-		<h1 class="title">
-			<i class="icon favicon"><img src="../common/image/favicon/trpg_favicon.svg" alt="TRPG"></i>
+	<div id="wrap" class="layout trpg">
+		<h1 class="title favicon">
+			<i class="icon"><img src="../common/image/common/favicon/trpg_favicon.svg" alt="TRPG"></i>
 			<span>TRPG 레이아웃 가이드</span>
 		</h1>
 		<div class="quick_menu swiper">
-			<ul class="">
-				<li class=""><a href=""></a></li>
+			<ul class="swiper-wrapper">
+				<li class="swiper-slide on"><a href="#reaction_css">반응형 구분 및 css 작성</a></li>
+				<li class="swiper-slide"><a href="#logo">logo</a></li>
+				<li class="swiper-slide"><a href="#box_style">box_style</a></li>
+				<li class="swiper-slide"><a href="#input">input</a></li>
+				<li class="swiper-slide"><a href="#button">button</a></li>
+				<li class="swiper-slide"><a href="#"></a></li>
+				<li class="swiper-slide"><a href="#"></a></li>
 			</ul>
 		</div>
 		<main id="main">
+			<section class="g_wrap" id="reaction_css">
+				<h2>홈페이지 반응형 구분 및 CSS 작성</h2>
+				<div class="g_cont">
+					<strong class="g_tit">Mobile(767px 이하)</strong>
+					<div class="g_code">@media all and (max-width: 767px) and (min-width: 320px)</div>
+				</div>
+				<div class="g_cont">
+					<strong class="g_tit">Tablet(768px ~ 1023px)</strong>
+					<div class="g_code">@media all and (max-width: 1023px) and (min-width: 768px)</div>
+				</div>
+				<div class="g_cont">
+					<strong class="g_tit">PC(1024px 이상)</strong>
+					<div class="g_code">PC 최소 너비 : 1024px</div>
+				</div>
+			</section>
+			
+			</section>
+			<section class="g_wrap" id="logo">
+				<h2>LOGO</h2>
+				<div class="g_cont">
+					<strong class="g_tit">기본</strong>
+					<div class="img_wrap logo">
+						<img src="./../common/image/common/trpg_logo.svg" alt="TRPG">
+					</div>
+				</div>
+				<div class="g_cont">
+					<strong class="g_tit">흰색버전</strong>
+					<div class="g_code img_wrap logo">
+						<img src="./../common/image/common/trpg_logo_w.svg" alt="TRPG">
+					</div>
+				</div>
+				<div class="g_cont">
+					<strong class="g_tit">검은버전</strong>
+					<div class="img_wrap logo">
+						<img src="./../common/image/common/trpg_logo_b.svg" alt="TRPG">
+					</div>
+				</div>
+			</section>
+			
+			<section class="g_wrap" id="box_style">
+				<h2>Box Style</h2>
+				<div class="g_cont">
+					<div class="g_tit"></div>
+					<div class="">기본</div>
+				</div>
+			</section>
+			
+			<section class="g_wrap" id="input">
+				<h2>input</h2>
+				<div class="g_cont">
+					<stong class="g_tit"></stong>
+					<p class="g_ex">class=""</p>
+					<div class="input_wrap">
+						<input type="text" name="" placeholder="기본">
+						<input type="text" name="" placeholder="비활성화" readonly>
+					</div>
+				</div>
+				<div class="g_cont">
+					<stong class="g_tit"></stong>
+					<p class="g_ex">class=""</p>
+					<div class="input_wrap">
+						<input type="text" name="" placeholder="입력에러메세지">
+						<div class="msg_wrap">
+							<p class="wrn">잘못된 입력입니다.</p>
+							<p class="wrn">다시 한번 확인해주세요</p>
+							<p class="pass">확인되었습니다.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<section class="g_wrap" id="button">
+				<h2>버튼</h2>
+					<div class="g_cont">
+						<strong class="g_tit">기본</strong>
+						<p class="g_ex">class=""</p>
+						<div class="btn_wrap">
+							<a href="#none">버튼</a>
+							<a href="#none">a태그 비활성화 버튼</a>
+							<button>type 버튼 비활성화</button>
+						</div>
+					</div>
+					<div class="g_cont">
+						<strong class="g_tit">색상별 버튼</strong>
+						<p class="g_ex">class=""</p>
+						<div class="btn_wrap">
+							<a href="#none">버튼</a>
+							<a href="#none">버튼</a>
+							<a href="#none">버튼</a>
+							<a href="#none">버튼</a>
+							<a href="#none">버튼</a>
+						</div>
+					</div>
+					<div class="g_cont">
+						<strong class="g_tit">버튼 크기</strong>
+						<p class="g_ex">class=""</p>
+						<div class="btn_wrap">
+							<a href="#none">기본 버튼</a>
+							<a href="#none">너비 30%</a>
+							<a href="#none">너비 500%</a>
+							<a href="#none">너비 100%</a>
+							<a href="#none">높이 px</a>
+							<a href="#none">높이 px</a>
+							<a href="#none">높이 px</a>
+						</div>
+					</div>
+					<div class="g_cont">
+						<strong class="g_tit">슬라이드, 다음이전 버튼</strong>
+						<p class="g_ex">class=""</p>
+						<div class="btn_wrap">
+							<button type="button">이전</button>
+							<button type="button">다음</button>
+							<button type="button">이전 icon</button>
+							<button type="button">다음 icon</button>
+						</div>
+					</div>
+					<div class="g_cont">
+						<strong class="g_tit">2개 이상 버튼</strong>
+						<p class="g_ex">class=""</p>
+						<div class="btn_wrap">
+							<a href="#none">버튼</a>
+							<a href="#none">버튼</a>
+						</div>
+					</div>
+			</section>
 
 		</main>
+		<script>
+			menuSwiper(); //퀵메뉴 스와이프
+			quickSeolMenu(); // 퀵메뉴 이동
+			
+			$(window).resize(function() {
+				menuSwiper(); //퀵메뉴 스와이프
+				quickSeolMenu(); // 퀵메뉴 이동
+			})
+		</script>
 	</div>
 </body>
 </html>
