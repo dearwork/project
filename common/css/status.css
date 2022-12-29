@@ -44,7 +44,7 @@ section ~ section {margin-top: 30px;}
 .work_section table {width: 100%; table-layout: auto;}
 .work_section table thead th {border-bottom: 1px solid #1C1C1C;}
 .work_section table thead th .logo {display: block; width: 80%; margin: 0 auto;}
-.work_section table thead th .icon_txt_wrap {width: 100%; display: flex; align-items: center; justify-content: center; padding: 15px 0;}
+.work_section table thead th .icon_txt_wrap {width: 100%; display: flex; align-items: flex-end; justify-content: center; padding: 15px 0;}
 .work_section table thead th .favicon {display: block; width: 60px; margin-right: 5px;}
 .work_section table thead th .favicon img {vertical-align: bottom;}
 .work_section table thead th strong {font-weight: 500;}
@@ -55,8 +55,6 @@ section ~ section {margin-top: 30px;}
 .work_section table td:nth-child(1) {width: 30%;}
 .work_section table td:nth-child(2) {width: 40%;}
 .work_section table td:nth-child(2) a {display: block; text-decoration: underline; text-underline-offset : 5px; line-height: 30px; min-height: 30px;}
-.work_section table td:nth-child(3) {width: 10%;}
-.work_section table td:nth-child(4) {width: 40%;}
 
 /* satenet */
 .work_section .safenet_wrap {display: flex; align-items: flex-start; justify-content: center; margin: 0 auto;}
@@ -94,8 +92,10 @@ section ~ section {margin-top: 30px;}
 .layout {min-width: 320px; margin: 0 auto;}
 
 h1 {margin-bottom: 30px;}
-h2 {padding-left: 10px; font-size: 24px; line-height: 32px; font-weight: 500; color: #0A0279; background: #77ADFF; margin-bottom: 10px; text-transform: uppercase;}
+h2 {padding-left: 10px; font-size: 24px; line-height: 32px; font-weight: 500; margin-bottom: 10px; text-transform: uppercase;}
 .work_section h2 {background: #EAEAEA; color: #333333;}
+
+.cola h2 {color: #0A0279; background: #77ADFF;}
 
 .g_wrap {}
 .g_wrap ~ .g_wrap {margin-top: 30px;}
@@ -131,8 +131,8 @@ h2 {padding-left: 10px; font-size: 24px; line-height: 32px; font-weight: 500; co
 .quick_menu ul li.swiper-slide {width: auto !important;}
 
 .cola .quick_menu {background: #050A26;}
-.quick_menu ul li a {color: #048ABF;}
-.quick_menu ul li.on a {color: #F2F2F2; border-bottom: 4px solid #F2F2F2;}
+.cola .quick_menu ul li a {color: #048ABF;}
+.cola .quick_menu ul li.on a {color: #F2F2F2; border-bottom: 4px solid #F2F2F2;}
 
 
 
