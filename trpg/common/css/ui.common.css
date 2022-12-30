@@ -1,10 +1,12 @@
 @charset "uft-8";
 
 /* -------------------------------- [font] -------------------------------- */
-/*font-family: 'Noto Sans KR', sans-serif;*//*기본 한글폰트*/
+/* font-family: 'Noto Sans KR', sans-serif; *//*기본 한글폰트*/
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
-/*font-family: 'Noto Sans', sans-serif;*//*기본 영문폰트*/
+/* font-family: 'Noto Sans', sans-serif; *//*기본 영문폰트*/
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* font-family: 'Nanum Brush Script', cursive; font-family: 'Nanum Pen Script', cursive; *//*나눔브러쉬, 펜*/
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&family=Nanum+Pen+Script&display=swap');
 /* --------------------------------// [font] -------------------------------- */
 
 /* -------------------------------- [RESET] -------------------------------- */
@@ -21,8 +23,19 @@ caption{visibility:hidden; height:0px; overflow:hidden; font-size:0;}
 a { text-decoration: none; color: #000;}
 /* --------------------------------// [RESET] -------------------------------- */
 
-/* --------------------------------[공통] -------------------------------- */
+/* -------------------------------- [공통] -------------------------------- */
+
+/* 이미지 */
+img {display: block; width: 100%;}
 
 
 
 /* --------------------------------// [공통] -------------------------------- */
+
+/* -------------------------------- [index, main페이지] -------------------------------- */
+#wrap.main {width: 100vw; height: 100vh; overflow: hidden; background: #F2F2F2;}
+
+#wrap.main .subtit {font-family: 'Nanum Pen Script', cursive; font-weight: 100;}
+
+
+/* --------------------------------// [index, main페이지] -------------------------------- */
