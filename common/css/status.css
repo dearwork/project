@@ -48,9 +48,10 @@ section ~ section {margin-top: 30px;}
 .work_section table thead th {border-bottom: 1px solid #1C1C1C;}
 .work_section table thead th .logo {display: block; width: 80%; margin: 0 auto;}
 .work_section table thead th .icon_txt_wrap {width: 100%; display: flex; align-items: flex-end; justify-content: center; padding: 15px 0;}
-.work_section table thead th .favicon {display: block; width: 60px; margin-right: 5px;}
+.work_section table thead th .favicon {display: block; width: 40px; margin-right: 5px;}
 .work_section table thead th .favicon img {vertical-align: bottom;}
-.work_section table thead th strong {font-weight: 500;}
+.work_section table thead th strong {font-weight: 500; text-align: left;}
+.work_section table thead th strong .othername {font-size: 14px; font-weight: 300;}
 
 .work_section table thead td {text-align: center; font-weight: 500; text-transform: uppercase; background: #EAEAEA;}
 .work_section table td {box-sizing: border-box; border: 1px solid #1C1C1C; padding: 5px; text-align: center; vertical-align: middle; font-size: 14px; word-break: break-word;}
