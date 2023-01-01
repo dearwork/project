@@ -29,18 +29,26 @@ a { text-decoration: none; color: #000;}
 img {display: block; width: 100%;}
 
 /* #wrap {position: relative; width: 100vw; height: 100vh; box-sizing: border-box; overflow-x: hidden;}*/
-
+/*.go_link {position: absolute; display: block; width: 100%; height: 100%;}*/
+.blind {font-size: 0;line-height: 0;}
 
 /* --------------------------------// [공통] -------------------------------- */
 
 /* -------------------------------- [index, main페이지] -------------------------------- */
 #wrap.main {position: relative; background: #F2F2F2; padding-bottom: 380px;}
+
+#wrap.main section {position: relative; width: 100%; height: 100vw;}
+
+#wrap.main .link {position: relative;}
+
+#wrap.main .scen {width: 30vw;}
+
+#wrap.main .link:hover {visibility: visible; opacity: 1;}
+
 #wrap.main .subtit {font-family: 'Nanum Pen Script', cursive; font-weight: 100;}
 #wrap.main .typing {position: fixed; bottom: -12vw; left: 50vw; transform: translateX(-50%); width: 40vw;}
 #wrap.main .pen {position: fixed; bottom: -10vw; right: -4vw; transform: rotate(65deg) translateX(-50%); width: 30vw;}
 #wrap.main .pencil {position: fixed; bottom: -10vw; right: -2vw; transform: rotate(55deg) translateX(-50%); width: 30vw;}
-
-#wrap.main section {width: 100%; height: 100vw; transition-duration: 0.8s;}
 
 #wrap.main .copyright {color: #36281E; font-size: 14px; text-align: center; text-transform: uppercase;}
 
