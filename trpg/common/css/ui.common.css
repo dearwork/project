@@ -28,14 +28,71 @@ a { text-decoration: none; color: #000;}
 /* 이미지 */
 img {display: block; width: 100%;}
 
+/* #wrap {position: relative; width: 100vw; height: 100vh; box-sizing: border-box; overflow-x: hidden;}*/
 
 
 /* --------------------------------// [공통] -------------------------------- */
 
 /* -------------------------------- [index, main페이지] -------------------------------- */
-#wrap.main {width: 100vw; height: 100vh; overflow: hidden; background: #F2F2F2;}
-
+#wrap.main {position: relative; background: #F2F2F2; padding-bottom: 380px;}
 #wrap.main .subtit {font-family: 'Nanum Pen Script', cursive; font-weight: 100;}
+#wrap.main .typing {position: fixed; bottom: -12vw; left: 50vw; transform: translateX(-50%); width: 40vw;}
+#wrap.main .pen {position: fixed; bottom: -10vw; right: -4vw; transform: rotate(65deg) translateX(-50%); width: 30vw;}
+#wrap.main .pencil {position: fixed; bottom: -10vw; right: -2vw; transform: rotate(55deg) translateX(-50%); width: 30vw;}
+
+#wrap.main section {width: 100%; height: 100vw; transition-duration: 0.8s;}
+
+#wrap.main .copyright {color: #36281E; font-size: 14px; text-align: center; text-transform: uppercase;}
 
 
 /* --------------------------------// [index, main페이지] -------------------------------- */
+
+/* -------------------------------- [index, char페이지] -------------------------------- */
+.char {background: #ccc;}
+
+.char #main {display: flex;}
+
+.char .tab_wrap {position: sticky; top: 0; z-index: 10; width: 15vw; height: 100vh; overflow: hidden; overflow-y: scroll; background: #EAEAEA;}
+.char .tab_wrap ul {width: 100%; white-space: nowrap; align-items: flex-start; padding: 10px 0; margin: 30px 0;}
+.char .tab_wrap li {width: 90%; padding: 0 10px; height: 35px; line-height: 35px; color: #333333; background: #EAEAEA; cursor: pointer;}
+.char .tab_wrap li.active,
+.char .tab_wrap li.on {font-weight: 600;}
+
+/* 스크롤 디자인 */
+.char .tab_wrap::-webkit-scrollbar {width: 8px; overflow: auto;}
+.char .tab_wrap::-webkit-scrollbar-thumb {background: #000000;}
+.char .tab_wrap::-webkit-scrollbar-track {background: #EAEAEA;}
+
+.char_wrap {display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; width: 70vw; margin: 0 auto;}
+.char_item {position: relative; width: 100%; height: 0; padding-bottom: 200%; overflow: hidden; overflow: hidden; display: none;}
+.char_item.all,
+.char_item.active {display: block;}
+.char_item figure {position: absolute; width: 140%; height: 100%;}
+.char_item.non_img figure {position: absolute; width: 100%; height: 100%;}
+.char_item figure img {height: 100%; object-fit: cover;}
+.char_item figure::before {content: ""; position: absolute; width: 140%; height: 100%; background: linear-gradient(to top, #000, 60%, transparent); opacity: 0.4; visibility: hidden; opacity: 0;}
+.char_item .profile_info {position: absolute; left: 50%; transform: translateX(-50%); bottom: 30px; width: 100%; text-align: center; overflow: hidden; z-index: 1; visibility: hidden; opacity: 0;}
+.char_item .profile_info dt {display: flex; flex-flow: column; align-items: center; color: #F2F2F2; word-break: keep-all;}
+.char_item .profile_info .name {font-size: 32px; line-height: 44px; font-weight: 700; letter-spacing: 3px; font-family: 'Nanum Brush Script', cursive;}
+.char_item .profile_info .lang_name {font-size: 14px; font-weight: 400; text-transform: capitalize;}
+.char_item .profile_info dd {width: 80%; margin: 0 auto; font-size: 14px; line-height: 24px; font-weight: 300; text-transform: capitalize; color: #F2F2F2; word-break: keep-all;}
+
+.char_item:hover figure::before,
+.char_item:hover .profile_info {visibility: visible; opacity: 1; transition: all 0.3s;}
+
+
+/* --------------------------------// [index, char페이지] -------------------------------- */
+
+@media all and (max-width: 767px) and (min-width: 320px){
+/* -------------------------------- [index, char페이지] -------------------------------- */
+.char .tab_wrap {width: 30vw;}
+.char_wrap {width: 85vw; grid-template-columns: repeat(2, 1fr);}
+
+}
+
+@media all and (max-width: 1023px) and (min-width: 768px) {
+/* -------------------------------- [index, char페이지] -------------------------------- */
+.char .tab_wrap {width: 25vw;}
+.char_wrap {grid-template-columns: repeat(3, 1fr);}
+}
+
