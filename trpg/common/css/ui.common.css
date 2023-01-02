@@ -35,13 +35,17 @@ img {display: block; width: 100%;}
 /* --------------------------------// [공통] -------------------------------- */
 
 /* -------------------------------- [index, main페이지] -------------------------------- */
-#wrap.main {position: relative; background: #F2F2F2; padding-bottom: 380px;}
+#wrap.main {position: relative; background: #8b1111; padding-bottom: 380px;}
 
 #wrap.main section {position: relative; width: 100%; height: 100vw;}
 
-#wrap.main .link {position: relative;}
+#wrap.main .link {position: relative; width: 30vw;}
 
-#wrap.main .scen {width: 30vw;}
+#wrap.main .menual {width: 30vw;}
+#wrap.main .menual {width: 30vw;}
+#wrap.main .scen {width: 40vw;}
+#wrap.main .passport {width: 20vw;}
+#wrap.main .news {width: 50vw;}
 
 #wrap.main .link:hover {visibility: visible; opacity: 1;}
 
