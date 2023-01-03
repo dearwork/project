@@ -42,9 +42,8 @@ img {display: block; width: 100%;}
 #wrap.main .link {position: relative; width: 30vw;}
 
 #wrap.main .menual {width: 30vw;}
-#wrap.main .menual {width: 30vw;}
-#wrap.main .scen {width: 40vw;}
-#wrap.main .passport {width: 20vw;}
+#wrap.main .scen {width: 37vw;}
+#wrap.main .passport {width: 27vw;}
 #wrap.main .news {width: 50vw;}
 
 #wrap.main .link:hover {visibility: visible; opacity: 1;}
@@ -94,6 +93,12 @@ img {display: block; width: 100%;}
 
 
 /* --------------------------------// [index, char페이지] -------------------------------- */
+
+/* -------------------------------- [char, char상세페이지] -------------------------------- */
+#wrap.char_info {}
+
+
+/* --------------------------------// [char, char상세페이지] -------------------------------- */
 
 @media all and (max-width: 767px) and (min-width: 320px){
 /* -------------------------------- [index, char페이지] -------------------------------- */
