@@ -37,21 +37,22 @@ img {display: block; width: 100%;}
 /* -------------------------------- [index, main페이지] -------------------------------- */
 #wrap.main {position: relative; background: #8b1111; padding-bottom: 380px;}
 
-#wrap.main section {position: relative; width: 100%; height: 100vw;}
+/* #wrap.main section {position: relative; width: 100%; height: 100vw;} */
 
 #wrap.main .link {position: relative; width: 30vw;}
 
-#wrap.main .menual {width: 30vw;}
-#wrap.main .scen {width: 37vw;}
-#wrap.main .passport {width: 27vw;}
-#wrap.main .news {width: 50vw;}
+/* #wrap.main .bag {position: fixed; top: -28%; left: 50%; transform: translateX(-50%); width: 56vw;}
+#wrap.main .menual {position: fixed; top: 3%; width: 27vw;}
+#wrap.main .scen {position: fixed; bottom: -24%; left: -4%; width: 37vw;}
+#wrap.main .passport {position: fixed; right: 0%; width: 23vw;}
+#wrap.main .news {position: fixed; right: -10%; bottom: -30%; width: 45vw;}
 
 #wrap.main .link:hover {visibility: visible; opacity: 1;}
 
 #wrap.main .subtit {font-family: 'Nanum Pen Script', cursive; font-weight: 100;}
 #wrap.main .typing {position: fixed; bottom: -12vw; left: 50vw; transform: translateX(-50%); width: 40vw;}
 #wrap.main .pen {position: fixed; bottom: -10vw; right: -4vw; transform: rotate(65deg) translateX(-50%); width: 30vw;}
-#wrap.main .pencil {position: fixed; bottom: -10vw; right: -2vw; transform: rotate(55deg) translateX(-50%); width: 30vw;}
+#wrap.main .pencil {position: fixed; bottom: -10vw; right: -2vw; transform: rotate(55deg) translateX(-50%); width: 30vw;} */
 
 #wrap.main .copyright {color: #36281E; font-size: 14px; text-align: center; text-transform: uppercase;}
 
