@@ -39,7 +39,8 @@ img {display: block; width: 100%;}
 #wrap.main {position: relative; width: 100vw; height: 100vh; box-sizing: border-box; overflow-x: hidden;}
 #wrap.main .cont {position: relative; max-width: 1200px; width: 100%; padding-top: 800px; margin: 0 auto; background: #ccc;}
 
-#wrap.main .link_img a {position: relative;}
+
+/* #wrap.main .link_img a {position: relative;}
 #wrap.main .link_img a .txt_wrap {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
 
 #wrap.main .link_img .bag {position: absolute; top: 0; left: 50vw; transform: translate(-50%, -50%); width: 720px; height: 463px; transition: all .5s ease-in-out;}
@@ -53,7 +54,7 @@ img {display: block; width: 100%;}
 #wrap.main .link_img .letter {position: absolute; top: 20vh; right: 8vw; transform: translate(50%, -50%); width: 456px; height: 437px; transition: all .5s ease-in-out;}
 #wrap.main .link_img .letter img {transform: rotate(60deg);}
 #wrap.main .link_img .letter:hover {top: 25vh; right: 13vw; z-index: 1;}
-#wrap.main .link_img .typing {position: absolute; bottom: -40vh; left: 47vw; transform: translate(-50%, -50%); width: 624px; height: 395px; transition: all .5s ease-in-out;}
+#wrap.main .link_img .typing {position: absolute; bottom: -40vh; left: 47vw; transform: translate(-50%, -50%); width: 624px; height: 395px; transition: all .5s ease-in-out;} */
 
 /* !! 임시 그림 가이드 */
 /* .img_wrap.pc {position: absolute; top: 0; left: 0; width: 100%; top: -10%;} */
