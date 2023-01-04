@@ -28,30 +28,38 @@ a { text-decoration: none; color: #000;}
 /* 이미지 */
 img {display: block; width: 100%;}
 
-/* #wrap {position: relative; width: 100vw; height: 100vh; box-sizing: border-box; overflow-x: hidden;}*/
+/* #wrap {position: relative; width: 100vw; height: 100vh; box-sizing: border-box; overflow-x: hidden;} */
 /*.go_link {position: absolute; display: block; width: 100%; height: 100%;}*/
-.blind {font-size: 0;line-height: 0;}
+/* #wrap.main {position: relative; padding-bottom: 380px;} background: #8b1111; */
+.blind {font-size: 0; line-height: 0;}
 
 /* --------------------------------// [공통] -------------------------------- */
 
 /* -------------------------------- [index, main페이지] -------------------------------- */
-#wrap.main {position: relative; background: #8b1111; padding-bottom: 380px;}
+#wrap.main {position: relative; width: 100vw; height: 100vh; box-sizing: border-box; overflow-x: hidden;}
+#wrap.main .cont {position: relative; max-width: 1200px; width: 100%; padding-top: 800px; margin: 0 auto; background: #ccc;}
 
-#wrap.main section {position: relative; width: 100%; height: 100vw;}
+#wrap.main .link_img a {position: relative;}
+#wrap.main .link_img a .txt_wrap {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
 
+#wrap.main .link_img .bag {position: absolute; top: 0; left: 50vw; transform: translate(-50%, -50%); width: 720px; height: 463px; transition: all .5s ease-in-out;}
+#wrap.main .link_img .bag:hover {top: -4vw;}
+#wrap.main .link_img .menual {position: absolute; top: 30vh; left: 4vw; transform: translate(-50%, -50%); width: 396px; height: 463px; transition: all .5s ease-in-out;}
+#wrap.main .link_img .menual:hover {left: 10vw; z-index: 1;}
+#wrap.main .link_img .passport {position: absolute; top: 60vh; left: 2vw; transform: translate(-50%, -50%); width: 336px; height: 392px; transition: all .5s ease-in-out;}
+#wrap.main .link_img .passport:hover {left: 10vw; z-index: 1;}
+#wrap.main .link_img .newspaper {position: absolute; bottom: -80vh; right: 10vw; transform: translate(50%, -50%); width: 720px; height: 626px; transition: all .5s ease-in-out;}
+#wrap.main .link_img .newspaper:hover {bottom: -75vh; right: 20vw;}
+#wrap.main .link_img .letter {position: absolute; top: 20vh; right: 8vw; transform: translate(50%, -50%); width: 456px; height: 437px; transition: all .5s ease-in-out;}
+#wrap.main .link_img .letter img {transform: rotate(60deg);}
+#wrap.main .link_img .letter:hover {top: 25vh; right: 13vw; z-index: 1;}
+#wrap.main .link_img .typing {position: absolute; bottom: -40vh; left: 47vw; transform: translate(-50%, -50%); width: 624px; height: 395px; transition: all .5s ease-in-out;}
 
-/* #wrap.main .bag {position: absolute; top: -8%; left: 50%; transform: translateX(-50%); width: 56vw;}
-#wrap.main .menual {position: fixed; top: 4%; width: 27vw;}
-#wrap.main .scen {position: fixed; bottom: -24%; left: -4%; width: 37vw;}
-#wrap.main .passport {position: fixed; right: 0%; width: 23vw;}
-#wrap.main .news {position: fixed; right: -10%; bottom: -30%; width: 45vw;}
+/* !! 임시 그림 가이드 */
+/* .img_wrap.pc {position: absolute; top: 0; left: 0; width: 100%; top: -10%;} */
 
-#wrap.main .link:hover {visibility: visible; opacity: 1;}
-
-#wrap.main .subtit {font-family: 'Nanum Pen Script', cursive; font-weight: 100;}
-#wrap.main .typing {position: fixed; bottom: -12vw; left: 50vw; transform: translateX(-50%); width: 40vw;}
-#wrap.main .pen {position: fixed; bottom: -10vw; right: -4vw; transform: rotate(65deg) translateX(-50%); width: 30vw;}
-#wrap.main .pencil {position: fixed; bottom: -10vw; right: -2vw; transform: rotate(55deg) translateX(-50%); width: 30vw;} */
+/* link_item */
+/* #wrap.main .img_link_wrap {position: fixed; width: 100%; height: 100%; top: 0; left: 0;} */
 
 #wrap.main .copyright {color: #36281E; font-size: 14px; text-align: center; text-transform: uppercase;}
 
