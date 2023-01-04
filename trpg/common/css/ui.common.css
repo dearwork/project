@@ -36,33 +36,25 @@ img {display: block; width: 100%;}
 /* --------------------------------// [공통] -------------------------------- */
 
 /* -------------------------------- [index, main페이지] -------------------------------- */
-#wrap.main {position: relative; width: 100vw; height: 100vh; box-sizing: border-box; overflow-x: hidden;}
-#wrap.main .cont {position: relative; max-width: 1200px; width: 100%; padding-top: 800px; margin: 0 auto; background: #ccc;}
+#wrap.main {position: relative; width: 100vw; height: 100vh; box-sizing: border-box; overflow: hidden;}
+#wrap.main header {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 1;}
 
+#wrap.main .logo {width: 478px;}
+#wrap.main .txt {width: 245.7px; margin: 34px auto 29px;}
+#wrap.main .copy {width: 326px; margin: 0 auto;}
 
-/* #wrap.main .link_img a {position: relative;}
-#wrap.main .link_img a .txt_wrap {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+#wrap.main .table {position: relative; width: 100vw; height: 199vh; overflow: hidden; background: url(../image/picture/wood_bg.jpg) top left / 100%;}
+#wrap.main .table::before {content: ""; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -100%); width: 1775px; height: 966px; background: #000000; opacity: 0.6;}
+#wrap.main .table .bag_open {position: absolute; top: -185px; left: 50vw; transform: translate(-50%); width: 1050px; height: 676px; z-index: 1;}
+#wrap.main .table .bag {position: absolute; top: -185px; left: 50vw; transform: translate(-50%); width: 1050px; height: 676px;}
+#wrap.main .table .paperandclip {position: absolute; top: 547px; left: 0; width: 798px; height: 826px;}
+#wrap.main .table .menual {position: absolute; top: 107px; left: 50px; width: 468px; height: 547px;}
+#wrap.main .table .passport {position: absolute; top: 647px; left: 229px; width: 361px; height: 430px;}
+#wrap.main .table .letter {position: absolute; top: 127px; right: 0; width: 591px; height: 420px;}
+#wrap.main .table .news {position: absolute; top: 550px; right: -192px; width: 924px; height: 811px;}
+#wrap.main .table .penandpencil {position: absolute; top: 580px; right: 338px; width: 265px; height: 427px;}
+#wrap.main .table .typing {position: fixed; bottom: -185px; left: 50vw; transform: translate(-50%); width: 762px; height: 482px;}
 
-#wrap.main .link_img .bag {position: absolute; top: 0; left: 50vw; transform: translate(-50%, -50%); width: 720px; height: 463px; transition: all .5s ease-in-out;}
-#wrap.main .link_img .bag:hover {top: -4vw;}
-#wrap.main .link_img .menual {position: absolute; top: 30vh; left: 4vw; transform: translate(-50%, -50%); width: 396px; height: 463px; transition: all .5s ease-in-out;}
-#wrap.main .link_img .menual:hover {left: 10vw; z-index: 1;}
-#wrap.main .link_img .passport {position: absolute; top: 60vh; left: 2vw; transform: translate(-50%, -50%); width: 336px; height: 392px; transition: all .5s ease-in-out;}
-#wrap.main .link_img .passport:hover {left: 10vw; z-index: 1;}
-#wrap.main .link_img .newspaper {position: absolute; bottom: -80vh; right: 10vw; transform: translate(50%, -50%); width: 720px; height: 626px; transition: all .5s ease-in-out;}
-#wrap.main .link_img .newspaper:hover {bottom: -75vh; right: 20vw;}
-#wrap.main .link_img .letter {position: absolute; top: 20vh; right: 8vw; transform: translate(50%, -50%); width: 456px; height: 437px; transition: all .5s ease-in-out;}
-#wrap.main .link_img .letter img {transform: rotate(60deg);}
-#wrap.main .link_img .letter:hover {top: 25vh; right: 13vw; z-index: 1;}
-#wrap.main .link_img .typing {position: absolute; bottom: -40vh; left: 47vw; transform: translate(-50%, -50%); width: 624px; height: 395px; transition: all .5s ease-in-out;} */
-
-/* !! 임시 그림 가이드 */
-/* .img_wrap.pc {position: absolute; top: 0; left: 0; width: 100%; top: -10%;} */
-
-/* link_item */
-/* #wrap.main .img_link_wrap {position: fixed; width: 100%; height: 100%; top: 0; left: 0;} */
-
-#wrap.main .copyright {color: #36281E; font-size: 14px; text-align: center; text-transform: uppercase;}
 
 
 /* --------------------------------// [index, main페이지] -------------------------------- */
