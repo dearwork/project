@@ -76,22 +76,9 @@
 	<div id="wrap" class="char">
 		<h1>캐릭터</h1>
 		<main id="main">
+			
 		</main>
 		<script>
-			$(".tab_wrap li").click(function() {
-				var tabId = $(this).index();
-
-				$(this).addClass("active");
-				$(this).siblings().removeClass("active");
-
-				$(".char_item").removeClass("all");
-				$(".char_item").eq(tabId - 1).addClass("active").siblings(".char_item").removeClass("active");
-				if($(this).hasClass("all")){
-					$(".char_item").addClass("all");
-					$(".char_item").removeClass("active");
-				}
-			});
-			$(".tab_wrap li:first-child").click();
 		</script>
 	</div>
 </body>

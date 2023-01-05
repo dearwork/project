@@ -100,22 +100,22 @@
 					<img src="../common/image/picture/paperandclip.png" alt="서류">
 				</div>
 				<div class="menual">
-					<a href="">
+					<a href="menual.html">
 						<img src="../common/image/picture/book.png" alt="매뉴얼">
 					</a>
 				</div>
 				<div class="passport">
-					<a href="">
+					<a href="char/char.html">
 						<img src="../common/image/picture/passport.png" alt="여권">
 					</a>
 				</div>
 				<div class="letter">
-					<a href="">
+					<a href="scenario/scenario.html">
 						<img src="../common/image/picture/letter02.png" alt="의뢰">
 					</a>
 				</div>
 				<div class="news">
-					<a href="">
+					<a href="record/record.html">
 						<img src="../common/image/picture/newspaper.png" alt="신문">
 					</a>
 				</div>
@@ -128,6 +128,9 @@
 			</section>
 		</main>
 	<script>
+		//vh 단위 버그 해결법
+		const vh = window.innerHeight * 0.01;
+		document.documentElement.style.setProperty('--vh', `${vh}px`);
 	</script>
 	</div>
 </body>

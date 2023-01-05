@@ -10,6 +10,12 @@
 // 	});
 // });
 
+//vh 단위 버그 해결법
+window.addEventListener("resize", function() {
+	const vh = window.innerHeight * 0.01;
+	document.documentElement.style.setProperty('--vh', `${vh}px`);
+});
+
 // 한 세션씩 이동하기
 function sectionMove() {
 	const elm = document.querySelectorAll('section');

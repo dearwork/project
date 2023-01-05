@@ -10,52 +10,52 @@
 /* --------------------------------// [font] -------------------------------- */
 
 /* -------------------------------- [RESET] -------------------------------- */
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address,  big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside,  canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time,  mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 1rem; font: inherit; vertical-align: baseline;}
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}
-body {font-family: 'Noto Sans KR', sans-serif;}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address,  big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside,  canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time,  mark, audio, video {margin:0; padding:0; border:0; font-size:1rem; font:inherit; vertical-align:baseline;}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display:block;}
+body {font-family:'Noto Sans KR', sans-serif;}
 h1,h2,h3,h4,h5{font-weight:normal;}
-ol, ul {list-style: none;}
+ol, ul {list-style:none;}
 button{border:0; background:none;}
-blockquote, q {quotes: none;}
-blockquote:before, blockquote:after,q:before, q:after {content: '';content: none;}
-table {border-collapse: collapse; border-spacing: 0; width: 100%;}
+blockquote, q {quotes:none;}
+blockquote:before, blockquote:after,q:before, q:after {content:''; content:none;}
+table {border-collapse:collapse; border-spacing:0; width:100%;}
 caption{visibility:hidden; height:0px; overflow:hidden; font-size:0;}
-a { text-decoration: none; color: #000;}
+a { text-decoration:none; color:#000;}
 /* --------------------------------// [RESET] -------------------------------- */
 
 /* -------------------------------- [공통] -------------------------------- */
 
 /* 이미지 */
-img {display: block; width: 100%;}
+img {display:block; width:100%;}
 
 /* #wrap {position: relative; width: 100vw; height: 100vh; box-sizing: border-box; overflow-x: hidden;} */
 /*.go_link {position: absolute; display: block; width: 100%; height: 100%;}*/
 /* #wrap.main {position: relative; padding-bottom: 380px;} background: #8b1111; */
-.blind {font-size: 0; line-height: 0;}
+.blind {font-size:0; line-height:0;}
 
 /* --------------------------------// [공통] -------------------------------- */
 
 /* -------------------------------- [index, main페이지] -------------------------------- */
-#wrap.main {position: relative; width: 100vw; height: 100vh; box-sizing: border-box; overflow: hidden;}
-#wrap.main header {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 1;}
+#wrap.main {position:relative; width:100vw; height:100vh; height:calc(var(--vh, 1vh) * 100); box-sizing:border-box; overflow:hidden;}
+#wrap.main header {position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); z-index:10;}
 
-#wrap.main .logo {width: 478px;}
-#wrap.main .txt {width: 245.7px; margin: 34px auto 29px;}
-#wrap.main .copy {width: 326px; margin: 0 auto;}
+#wrap.main .logo {width:25vw;}
+#wrap.main .txt {width:13vw; margin:2vw auto 2vw;}
+#wrap.main .copy {width:17vw; margin:0 auto;}
 
-#wrap.main .table {position: relative; width: 100vw; height: 199vh; overflow: hidden; background: url(../image/picture/wood_bg.jpg) top left / 100%;}
-#wrap.main .table::before {content: ""; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -100%); width: 1775px; height: 966px; background: #000000; opacity: 0.6;}
-#wrap.main .table .bag_open {position: absolute; top: -185px; left: 50vw; transform: translate(-50%); width: 1050px; height: 676px; z-index: 1;}
-#wrap.main .table .bag {position: absolute; top: -185px; left: 50vw; transform: translate(-50%); width: 1050px; height: 676px;}
-#wrap.main .table .paperandclip {position: absolute; top: 547px; left: 0; width: 798px; height: 826px;}
-#wrap.main .table .menual {position: absolute; top: 107px; left: 50px; width: 468px; height: 547px;}
-#wrap.main .table .passport {position: absolute; top: 647px; left: 229px; width: 361px; height: 430px;}
-#wrap.main .table .letter {position: absolute; top: 127px; right: 0; width: 591px; height: 420px;}
-#wrap.main .table .news {position: absolute; top: 550px; right: -192px; width: 924px; height: 811px;}
-#wrap.main .table .penandpencil {position: absolute; top: 580px; right: 338px; width: 265px; height: 427px;}
-#wrap.main .table .typing {position: fixed; bottom: -185px; left: 50vw; transform: translate(-50%); width: 762px; height: 482px;}
+#wrap.main .table {position: relative; width: 100vw; height: 100vh; overflow:hidden; background:url(../image/picture/wood_bg.jpg) top left / 100%;}
+#wrap.main .table::before {content:""; position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); width:92vw; height:87vh; background:#000000; opacity:0.6;}
+#wrap.main .table .bag_open {position:absolute; top:-17vh; left:50vw; transform:translate(-50%); width:55vw; height:61vh; z-index:1;}
+#wrap.main .table .bag {position:absolute; top:-17vh; left:50vw; transform:translate(-50%); width:55vw; height:61vh;}
+#wrap.main .table .paperandclip {position:absolute; top:49vh; left:0; width:42vw; height:74vh;}
+#wrap.main .table .menual {position:absolute; top:10vh; left:3vw; width:24vw; height:49vh;}
+#wrap.main .table .passport {position:absolute; top:58vh; left:12vw; width:19vw; height:39vh;}
+#wrap.main .table .letter {position:absolute; top:11vh; right:0; width:31vw; height:38vh;}
+#wrap.main .table .news {position:absolute; top:50vh; right:-10vw; width:48vw; height:73vh;}
+#wrap.main .table .penandpencil {position:absolute; top:52vh; right:18vw; width:14vw; height:39vh;}
+#wrap.main .table .typing {position:absolute; bottom:-17vh; left:47vw; transform:translate(-50%); width:40vw; height:43vh;}
 
-
+#wrap.main .table > div a:hover {filter: drop-shadow(0 0 1vw #8B1111);}
 
 /* --------------------------------// [index, main페이지] -------------------------------- */
 
