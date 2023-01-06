@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>Document</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="../common/css/ui.common.css">
+
+	<script src="../../common/js/lib/jquery-3.6.3.min.js"></script>
+	<script src="../common/js/dice.cmd.js"></script>
+</head>
+<body>
+	<div id="wrap" class="dice">
+		<main id="main">
+			<!-- 메세지 입력폼 -->
+			<div class="form_wrap">
+				<div class="msg_form">
+					<div class="input_wrap">
+						<textarea name="" id="" cols="30" rows="10" class="msg" autocomplete="off" placeholder="메세지 입력"></textarea>
+						<div class="msg_system">
+							<p class="error"></p>
+						</div>
+						<button type="button" class="btn send_btn">전송</button>
+					</div>
+				</div>
+			</div>
+			<!--// 메세지 입력폼 -->
+			<!-- 명령어 설정 입력기 -->
+			<!-- <div class="form_wrap">
+				<div class="system_form">
+					<div class="input_wrap">
+						<input type="text" placeholder="name" class="cmd_name">
+						<input type="text" placeholder="code" class="cmd_code">
+						<div class="msg_system">
+							<p class="error"></p>
+						</div>
+						<button type="button" class="btn make_btn">설정하기</button>
+					</div>
+				</div>
+			</div> -->
+			<!--// 명령어 설정 입력기 -->
+			<!-- 메세지에 입력된 값 띄우기 -->
+		<section class="msg_window_wrap txt_wrap common">
+			<div class="msg_text_info">
+				<div class="img"><img src="" alt=""></div>
+				<i class="icon">아이콘</i>
+				<span class="name">이름</sp>
+			</div>
+			<div class="cont"></div>
+			<div class="btn_wrap sys_btn">
+				<button type="button" class="btn close_btn">닫기</button>
+			</div>
+		</section>
+		<!--// 메세지에 입력된 값 띄우기 -->
+		</main>
+	</div>
+	<script>
+		var msg = $(".msg_form .msg"); // 텍스트 창
+		var msg_error = $(".msg_form .msg_system .error");
+		var msg_txt;
+		var msg_window = false; // 메세지 창 띄우기
+
+		//메세지 창 띄우기
+		function msg_open() {
+			if(msg_window === false && msg.val() != "") { //메세지 창 확인여부
+				msg_window = true;
+				$("body").addClass("fixed");
+				$("body").append("<div class='dimed'></div>");
+				$(".msg_window_wrap").addClass("active");
+				$(".msg_window_wrap").slideDown(300);
+			}
+			msg_cont();
+		};
+		$(".msg_form .send_btn").click(msg_open); //실행
+		
+		function enter_send () {
+			if(window.event.keyCode == 13) {
+				var blank_enter = msg.val().search(/(?:\r\n|\r|\n)/g);  //빈칸에 엔터키를 눌렀을 때 없는 값으로 변환
+				if(blank_enter == 0) {
+					msg.val("");
+				}
+				msg_open();
+			}
+		}
+		msg.keyup(enter_send);
+
+		function msg_close() {
+			msg_window = false;
+			$("body").removeClass('fixed');
+			$(".dimed").fadeOut(300, function() {
+				$(this).remove();
+			});
+			$(".msg_window_wrap").slideUp(300);
+		};
+		$(".msg_window_wrap .btn_wrap .close_btn").click(msg_close); //실행
+
+		//메세지
+		function msg_cont() {
+			if(msg.val() === "" || msg.val() === " " || !msg.val()) { //입력한 값이 빈 칸이 아닌지 확인여부
+				if(msg_error == "") {
+					$(".msg_form .msg_system").append("<p class='error'>메세지를 입력해주세요.</p>");
+				}
+				msg_error.text("메세지를 입력해주세요.");
+			}else { //입력한 값 
+
+				//공통 명령어 체크
+
+				msg_txt = msg.val().replace(/(?:\r\n|\r|\n)/g, '<br>');
+
+				$(".msg_window_wrap .cont").html(msg_txt);
+				msg.val("");
+				msg_error.html("");
+			}
+			msg_txt = msg.val();
+		};
+
+		function msg_cmd() {
+			console.log("cmd start");
+			//dice
+			
+		}
+		
+
+	</script>
+</body>
+</html>

@@ -74,68 +74,67 @@
 </head>
 <body>
 	<div id="wrap" class="main">
+		<header id="header">
+			<h1 class="logo">
+				<a href="">
+					<img src="../common/image/common/logo_w.svg" alt="TRPG">
+				</a>
+			</h1>
+			<div class="img_wrap txt">
+				<img src="../common/image/text/abyss_txt01.png" alt="심연을 오랫동안 들여다보면 그 심연 또한 나를 들여다본다.">
+			</div>
+			<!-- <p class="guide_txt opacity">빨간 화살표를 눌러 <span class="point">원하는 페이지</span>로 이동하세요.</p> -->
+			<div class="img_wrap copy">
+				<img src="../common/image/text/copy_txt01.png" alt="COPYRIGHT©2023 DEARWORKERER">
+			</div>
+		</header>
 		<main id="main">
-			<section class="header">
-				<div class=""><!-- cont -->
-					<h1 class="title">
-						<p>TRPG</p>
-						<span class="subtit">Tabletop Roll Playing Game</span>
-					</h1>
-					<p>심연을<span class="point">오랫동안</span> 들여다보면<br>그 심연 또한 나를 들여다본다.</p>
-					<p class="guide_txt opacity">빨간 화살표를 눌러<span class="point">원하는 페이지</span>로 이동하세요.</p>
-					<p class="copyright">copyright&copy;2023 DEARWORKERER</p>
+			<section class="table">
+				<div class="bag_open">
+					<img src="../common/image/picture/bag_open.png" alt="가방 윗부분">
 				</div>
-			</section>
-			<section class="link_img">
-				<div class="cont">
-
-					<div class="bag">
-						<img src="../common/image/picture/bag.png" alt="가방">
-					</div>
-
-					<div class="menual">
-						<a href="">
-							<img src="../common/image/picture/book.png" alt="메뉴열">
-							<div class="txt_wrap">
-								<strong class="caption">매뉴얼보기</strong>
-							</div>
-						</a>
-					</div>
-
-					<div class="passport">
-						<a href="">
-							<img src="../common/image/picture/passport.png" alt="여권">
-							<div class="txt_wrap">
-								<strong class="caption">캐릭터보기</strong>
-							</div>
-						</a>
-					</div>
-					<div class="newspaper">
-						<a href="">
-							<img src="../common/image/picture/newspaper.png" alt="신문">
-							<div class="txt_wrap">
-								<strong class="caption">로그보기</strong>
-							</div>
-						</a>
-					</div>
-					<div class="letter">
-						<a href="">
-							<img src="../common/image/picture/letter.png" alt="편지">
-							<div class="txt_wrap">
-								<strong class="caption">의뢰보기</strong>
-							</div>
-						</a>
-					</div>
-
-					<div class="typing">
-						<img src="../common/image/picture/typing.png" alt="타자기">
-					</div>
+				<div class="bag">
+					<img src="../common/image/picture/bag.png" alt="가방">
+				</div>
+				<div class="paperandclip">
+					<img src="../common/image/picture/paperandclip.png" alt="서류">
+				</div>
+				<div class="menual">
+					<a href="menual.html">
+						<img src="../common/image/picture/book.png" alt="매뉴얼">
+					</a>
+				</div>
+				<div class="passport">
+					<a href="char/char.html">
+						<img src="../common/image/picture/passport.png" alt="여권">
+					</a>
+				</div>
+				<div class="letter">
+					<a href="scenario/scenario.html">
+						<img src="../common/image/picture/letter02.png" alt="의뢰">
+					</a>
+				</div>
+				<div class="news">
+					<a href="record/record.html">
+						<img src="../common/image/picture/newspaper.png" alt="신문">
+					</a>
+				</div>
+				<div class="pen">
+					<img src="../common/image/picture/pen.png" alt="만년필">
+				</div>
+				<div class="pencil">
+					<img src="../common/image/picture/pencil.png" alt="연필">
+				</div>
+				<div class="typing">
+					<img src="../common/image/picture/typing.png" alt="타자기">
 				</div>
 			</section>
 		</main>
+		<!-- 랜딩페이지 -->
 	<script>
-		window.onload = function(){
-		}
+		//vh 단위 버그 해결법
+		const vh = window.innerHeight * 0.01;
+		document.documentElement.style.setProperty('--vh', `${vh}px`);
 	</script>
 	</div>
 </body>

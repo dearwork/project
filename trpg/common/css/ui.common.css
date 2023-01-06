@@ -36,24 +36,8 @@ img {display:block; width:100%;}
 /* --------------------------------// [공통] -------------------------------- */
 
 /* -------------------------------- [index, main페이지] -------------------------------- */
-#wrap.main {position:relative; width:100vw; height:100vh; height:calc(var(--vh, 1vh) * 100); box-sizing:border-box; overflow:hidden;}
-#wrap.main header {position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); z-index:10;}
+#wrap.main {position: relative; width: 100vw; height:100vh; height:calc(var(--vh, 1vh) * 100); box-sizing:border-box;}
 
-#wrap.main .logo {width:25vw;}
-#wrap.main .txt {width:13vw; margin:2vw auto 2vw;}
-#wrap.main .copy {width:17vw; margin:0 auto;}
-
-#wrap.main .table {position: relative; width: 100vw; height: 100vh; overflow:hidden; background:url(../image/picture/wood_bg.jpg) top left / 100%;}
-#wrap.main .table::before {content:""; position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); width:92vw; height:87vh; background:#000000; opacity:0.6;}
-#wrap.main .table .bag_open {position:absolute; top:-17vh; left:50vw; transform:translate(-50%); width:55vw; height:61vh; z-index:1;}
-#wrap.main .table .bag {position:absolute; top:-17vh; left:50vw; transform:translate(-50%); width:55vw; height:61vh;}
-#wrap.main .table .paperandclip {position:absolute; top:49vh; left:0; width:42vw; height:74vh;}
-#wrap.main .table .menual {position:absolute; top:10vh; left:3vw; width:24vw; height:49vh;}
-#wrap.main .table .passport {position:absolute; top:58vh; left:12vw; width:19vw; height:39vh;}
-#wrap.main .table .letter {position:absolute; top:11vh; right:0; width:31vw; height:38vh;}
-#wrap.main .table .news {position:absolute; top:50vh; right:-10vw; width:48vw; height:73vh;}
-#wrap.main .table .penandpencil {position:absolute; top:52vh; right:18vw; width:14vw; height:39vh;}
-#wrap.main .table .typing {position:absolute; bottom:-17vh; left:47vw; transform:translate(-50%); width:40vw; height:43vh;}
 
 #wrap.main .table > div a:hover {filter: drop-shadow(0 0 1vw #8B1111);}
 
