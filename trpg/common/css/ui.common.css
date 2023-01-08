@@ -56,7 +56,7 @@ img {display:block; width:100%;}
 #header .right_wrap div ~ div {margin-left: 20px;}
 #header .right_wrap ul {display: flex; align-items: center; color: #F2F2F2;}
 #header .right_wrap ul li {width: 24px; height: 24px; box-sizing: border-box;}
-#header .right_wrap ul li ~ li {margin-left: 10px;}
+#header .right_wrap ul li ~ li {margin-left: 12px;}
 #header .right_wrap ul li span {display: block; width: 100%; height: 100%; background: center/contain no-repeat;}
 #header .right_wrap ul li.arrow_top span {background-image: url(../image/common/icon/arrow_top.svg);}
 #header .right_wrap ul li.volum span {background-image: url(../image/common/icon/volum.svg);}
