@@ -73,10 +73,119 @@
 	
 </head>
 <body>
-	<div id="wrap" class="main">
+	<div id="wrap" class="main pc">
+		<!-- HEADER -->
+		<header id="header">
+			<div class="cont">
+				<h1 class="logo">
+					<a href=""><span>TRPG</span></a>
+				</h1>
+				<nav class="menu">
+					<ul>
+						<li class="icon home">
+							<a href="index.html" class="active"><span>홈</span></a>
+						</li>
+						<li class="icon file">
+							<a href="scenario/scenario.html"><span>사건파일</span></a>
+						</li>
+						<li class="icon char">
+							<a href="char/char.html"><span>사건관계자</span></a>
+						</li>
+						<li class="icon log">
+							<a href="record/record.html"><span>사건정리</span></a>
+						</li>
+						<li class="icon menual">
+							<a href="menual.html"><span>인수인계</span></a>
+						</li>
+						<li class="icon msg">
+							<a href="#none" onclick=""><span>메신저</span></a>
+						</li>
+						<li class="icon manager">
+							<a href="manager/login.html"><span>관리자권한</span></a>
+						</li>
+					</ul>
+				</nav>
+				<div class="right_wrap">
+					<div class="deco">
+						<ul>
+							<li class="arrow_top"><span class="blind">위쪽 화살표</span></li>
+							<li class="volum"><span class="blind">한/영</span></li>
+							<li class="bty"><span class="blind">배터리</span></li>
+							<li class="wifi"><span class="blind">와이파이</span></li>
+						</ul>
+					</div>
+					<div class="clock"> <!-- 현재 시간 js 코딩하기 -->
+						<div class="time"><span id="apm"></span> <span id="num"></span></div>
+						<span id="date"></span>
+					</div>
+				</div>
+			</div>	
+		</header>
+		<!--// HEADER -->
+
 		<main id="main">
+			<div class="cont">
+				<div class="item time_wrap">
+					시간
+				</div>
+				<div class="item memo_wrap">
+					메모이미지
+				</div>
+				<div class="blank">
+				</div>
+				
+				<!-- 바탕화면 아이콘 바로가기 -->
+				<div class="folder delete">
+					<i>프로그램</i>
+					<h2 class="title">휴지통</h2>
+					<span class=""></span>
+				</div>
+
+				<div class="folder menual">
+					<a href="">
+						<i>메모장</i>
+						<h2 class="title">인수인계</h2>
+						<span class=""></span>
+					</a>
+				</div>
+
+				<div class="folder scen">
+					<a href="">
+						<i>폴더</i>
+						<h2 class="title">사건파일</h2>
+						<span class=""></span>
+					</a>
+				</div>
+				
+				<div class="folder char">
+					<a href="">
+						<i>폴더</i>
+						<h2 class="title">사건관계자</h2>
+						<span class=""></span>
+					</a>
+				</div>
+
+				<div class="folder log">
+					<a href="">
+						<i>폴더</i>
+						<h2 class="title">사건기록</h2>
+						<span class=""></span>
+					</a>
+				</div>
+
+				<div class="folder msg">
+					<a href="">
+						<i>프로그램</i>
+						<h2 class="title">메신저</h2>
+						<span class=""></span>
+					</a>
+				</div>
+				</div>
+				<!--// 바탕화면 아이콘 바로가기 -->
+			</div>
 		</main>
 	<script>
+		time();
 	</script>
 	</div>
 </body>

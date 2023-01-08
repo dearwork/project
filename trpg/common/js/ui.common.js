@@ -62,3 +62,37 @@ function sectionMove() {
 	});
 };
 
+//TIME
+function time() {
+	let today = new Date();
+
+	let year = today.getFullYear(),
+		month = String(today.getMonth() + 1).padStart(2, "0"),
+		date = String(today.getDate()).padStart(2, "0"),
+		day = String(today.getDay()).padStart(2, "0");
+
+	let hours = String(today.getHours()).padStart(2, "0"),
+		min = String(today.getMinutes()).padStart(2, "0"),
+		millsecond = String(today.getMilliseconds()).padStart(2, "0");
+
+	var apm = "";
+	if (hours < 12) {
+		apm = "오전";
+		hours;
+	}else if(hours == 12) {
+		hours;
+	}else {
+		apm = "오후";
+		hours = (hours%12) || 12;
+	};
+
+	document.getElementById("apm").innerHTML = apm;
+	document.getElementById("num").innerHTML = hours + ":" + min;
+	document.getElementById("date").innerHTML = year + "-" + month + "-" + date;
+
+	setInterval(function() {
+		document.getElementById("apm").innerHTML = apm;
+		document.getElementById("num").innerHTML = hours + ":" + min;
+		document.getElementById("date").innerHTML = year + "-" + month + "-" + date;
+	},100);
+}
