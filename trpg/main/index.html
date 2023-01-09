@@ -109,7 +109,6 @@
 					<div class="deco">
 						<ul>
 							<li class="arrow_top"><span class="blind">위쪽 화살표</span></li>
-							<li class="volum"><span class="blind">한/영</span></li>
 							<li class="bty"><span class="blind">배터리</span></li>
 							<li class="wifi"><span class="blind">와이파이</span></li>
 						</ul>
@@ -126,13 +125,16 @@
 		<main id="main">
 			<div class="cont">
 				<div class="item time_wrap">
-					시간
+					<div class="clock">
+						<div class="time"><span id="apm"></span> <span id="num"></span></div>
+						<span id="date"></span>
+					</div>
 				</div>
 				<div class="item memo_wrap">
 					메모이미지
 				</div>
-				<div class="blank">
-				</div>
+				<!-- <div class="blank">
+				</div> -->
 				
 				<!-- 바탕화면 아이콘 바로가기 -->
 				<div class="folder delete">
@@ -180,10 +182,27 @@
 						<span class=""></span>
 					</a>
 				</div>
+				<div class="folder menual">
+					<a href="../status/guide.html">
+						<i>메모장</i>
+						<h2 class="title">가이드(임시)</h2>
+						<span class=""></span>
+					</a>
 				</div>
 				<!--// 바탕화면 아이콘 바로가기 -->
-			</div>
+			</div><!--// CONT -->
 		</main>
+		<!-- <div class="layer_pop">
+			<div class="cont">
+				<p>
+					해당 프로그램은 점검 중 입니다.<br>
+				</p>
+				<div class="btn_wrap close">
+					<button type="button" class="btn">닫기</button>
+				</div>
+			</div>
+		</div>
+		<div class="dimd"></div> -->
 	<script>
 		time();
 	</script>

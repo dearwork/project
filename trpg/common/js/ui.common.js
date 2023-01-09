@@ -94,5 +94,5 @@ function time() {
 		document.getElementById("apm").innerHTML = apm;
 		document.getElementById("num").innerHTML = hours + ":" + min;
 		document.getElementById("date").innerHTML = year + "-" + month + "-" + date;
-	},100);
+	});
 }

@@ -12,7 +12,7 @@
 .tab_wrap li.on {font-weight: 600;}
 .tab_wrap {}
 
-/* 스크롤 디자인 */
+/* 스크롤 디자인 *
 .tab_wrap ul::-webkit-scrollbar {height: 10px; overflow: auto;}
 .tab_wrap ul::-webkit-scrollbar-thumb {background: #000000;}
 .tab_wrap ul::-webkit-scrollbar-track {background: #EAEAEA;}
@@ -30,7 +30,7 @@
 .note {border: 2px dashed #ccc; padding: 10px;}
 
 /*------------------------------ [ work/menu_section 영역 ] ------------------------------*/
-
+#wrap.layout {height: auto;} /* height:100%;일 경우 상단 퀵메뉴 작동오류 발생 */
 section ~ section {margin-top: 30px;}
 .work_section,
 .menu_section {display: none;}
@@ -101,7 +101,7 @@ h2 {padding-left: 10px; font-size: 24px; line-height: 32px; font-weight: 500; ma
 
 /* 프로젝트별 색상 */
 .cola h2 {color: #0A0279; background: #77ADFF;}
-.trpg h2 {color: #F2EFDF; background: #A67A53;}
+.trpg h2 {color: #EFEFEF; background: #A4A4A4;}
 
 .g_wrap {}
 .g_wrap ~ .g_wrap {margin-top: 30px;}
@@ -117,7 +117,10 @@ h2 {padding-left: 10px; font-size: 24px; line-height: 32px; font-weight: 500; ma
 .g_wrap .g_cont .list li::before {content: "· ";}
 .g_wrap .g_cont .g_table {margin-bottom: 20px;}
 .g_wrap .g_cont .g_table th,
-.g_wrap .g_cont .g_table td {width: calc(100% / 2); text-align: left; padding: 10px 0; border-bottom: 1px solid #0A0279;}
+.g_wrap .g_cont .g_table td {width: calc(100% / 2); text-align: left; padding: 10px 0;}
+.cola .g_wrap .g_cont .g_table td {border-bottom: 1px solid #0A0279;}
+.trpg .g_wrap .g_cont .g_table td {border-bottom: 1px solid #3E3E3E;}
+
 .g_wrap .g_cont .g_table tbody td{font-size: 14px; color: #111111;}
 
 /* 아이콘 */
@@ -142,8 +145,8 @@ h2 {padding-left: 10px; font-size: 24px; line-height: 32px; font-weight: 500; ma
 .cola .quick_menu ul li a {color: #048ABF;}
 .cola .quick_menu ul li.on a {color: #F2F2F2; border-bottom: 4px solid #F2F2F2;}
 
-.trpg .quick_menu {background: #36281E;}
-.trpg .quick_menu ul li a {color: #8C654F;}
+.trpg .quick_menu {background: #2A2A2A;}
+.trpg .quick_menu ul li a {color: #A4A4A4;}
 .trpg .quick_menu ul li.on a {color: #F2F2F2; border-bottom: 4px solid #F2F2F2;}
 
 

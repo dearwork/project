@@ -1,0 +1,276 @@
+/*mob*/
+@media all and (min-width: 320px) {
+    .box {
+        box-sizing: border-box;
+        width: 80%;
+        margin: auto; margin: 10px auto;
+        background: #1a1a1aea;
+        box-shadow: 0 5px 5px #1a1a1aea, 0 10px 10px #1a1a1aea;
+        border-radius: 2px;
+        padding: 30px 15px;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        -ms-border-radius: 2px;
+        -o-border-radius: 2px;
+    }
+    .box h3 { 
+        font-size: 30px; text-transform: uppercase;
+        width: 100%; text-align: center;
+        font-family: '에스코어 드림6 Bold';
+        margin-bottom: 30px; color: #fff;
+    }
+    .box form { width: 90%; margin: auto; position: relative;}
+    .box form .inputBox { position: relative; margin: 30px auto;}
+    .box form .inputBox input {
+        width: 100%; margin: auto;
+        padding: 10px 0;
+        font-size: 16px;
+        color: #fff;
+        margin-bottom: 10px;
+        border: none; outline: 0;
+        border-bottom: 2px solid #fff;
+        background: transparent;
+    }
+    .box .inputBox label {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 10px 0;
+        color: #fff;
+        font-size: 12px;
+        pointer-events: none;
+        transition: .5s;
+        -webkit-transition: .5s;
+        -moz-transition: .5s;
+        -ms-transition: .5s;
+        -o-transition: .5s;
+    }
+    .box .inputBox input:focus ~ label,
+    .box .inputBox input:valid ~ label {
+        top : -20px;
+        left: 0;
+        color: #ffc400;
+        font-size: 12px;
+    }
+    .box input[type="button"] {
+        display: block;
+        border: none;
+        outline: none;
+        background: #ffc400;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 3px;
+        font-size: 14px;
+        font-family: '에스코어 드림5 Medium';
+        letter-spacing: 1px;
+        margin: 20px 0;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        -o-border-radius: 3px;
+}
+    .box form a { display: block; color: #fff; padding: 3px 0; transition: .2s; -webkit-transition: .2s; -moz-transition: .2s; -ms-transition: .2s; -o-transition: .2s; }
+    .box form a span {
+        color: #ffc400; 
+        font-family: '에스코어 드림5 Medium';
+    }
+    .box .aBox {display: flex; color: #fff; align-items: baseline; font-size: 14px;}
+    .box form a { opacity: .6; font-size: 14px; margin-bottom: 10px;}
+    .box form a:nth-child(3) { margin: 0;}
+    .box form a:hover {color: #fff; opacity: 1;}
+    .box form p { color: #cccc; font-size: 10px;}
+    .box .radioBox { display: flex; align-items: center;}
+    .box .inputBox input[type="radio"] {
+        position: relative;
+        width: 20px; height: 20px;
+        border: 2px solid #fff;
+        padding: 0; margin: 0;
+    }
+    .box .inputBox input[type="radio"]:nth-last-child(2){ margin-left: 30px;}
+    .box .inputBox input[type="radio"]:checked { background: #fff;}
+    .box .radioBox label { position: static; margin: 0px 10px; pointer-events: all; cursor: pointer;}
+    .box .radioBox input:focus ~ label, .box .radioBox input:valid ~ label {
+        top: 0; left: 0; color: #fff;
+    }
+    .box span i, .show-btn i {
+        position: absolute; top: 0; right: 0;
+        font-size: 20px; padding: 10px; color: #fff;
+        cursor: pointer;
+    }
+    .show-btn i.bx-hide { display: none;}
+    .show-btn i.bx-show { display: block;}
+    .show-btn.hide-btn i.bx-hide { display: block;}
+    .show-btn.hide-btn i.bx-show { display: none;}
+    .faq-text{
+        width: 100%;
+        margin-top: 20px;
+        overflow-y: auto;
+    }
+    .faq-text::-webkit-scrollbar{ display: none;}
+    .faq-text .boxframe { width: 80%; display: flex; align-items: center;}
+    .faq-text li{
+        position: relative;
+    }
+    .faq-text .logincheck {
+        display: block;
+        padding: 10px; padding-left: 0; margin: 3px 0;
+    }
+    .faq-text li .logincheck .question{
+        font-size: 12px;
+        font-weight: 500;
+        color: #fff;
+        transition: all 0.3s ease;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        cursor: pointer;
+}
+    .faq-text li .logincheck .arrow{
+        font-size: 12px;
+        color: #fff;
+        transition: all 0.3s ease;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+}
+    .faq-text li.showAnswer .logincheck .arrow{
+        transform: rotate(-180deg);
+        -webkit-transform: rotate(-180deg);
+        -moz-transform: rotate(-180deg);
+        -ms-transform: rotate(-180deg);
+        -o-transform: rotate(-180deg);
+}
+    .faq-text li p{
+        width: 100%;
+        font-size: 12px;
+        line-height: 16px;
+        font-weight: 500;
+        color: #ccc;
+        display: none;
+        transition: all 0.3s ease;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+    }
+    .faq-text li.showAnswer p{
+        display: block;
+    }
+    /*체크박스 디자인*/
+    input[type="button"]::focus{outline:0;}
+    input[type="checkbox"] {display: none;}
+    input[type="checkbox"] + label {
+        position: absolute;
+        right: -10px; top: 5px;
+        width: 20px;
+        height: 20px;
+        border: 1px solid #707070;
+        border-radius: 3px;
+        cursor: pointer;
+        float: right;
+        transition: background 0.1s ease;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        -o-border-radius: 3px;
+        -webkit-transition: background 0.1s ease;
+        -moz-transition: background 0.1s ease;
+        -ms-transition: background 0.1s ease;
+        -o-transition: background 0.1s ease;
+        -webkit-transform: translate(-50%);
+        pointer-events: all;
+}
+    #icon:after{
+        content: " ";
+        position: absolute;
+        top: 2px;
+        left: 5.4px;
+        width: 6px;
+        height: 9.5px;
+        border-right: 3px solid #303030;
+        border-bottom: 2px solid #303030;
+        transform: rotate(45deg) scale(0);
+        transition: all 0.3s ease;
+        z-index: 999;
+        background: #ffc400;
+        /*transition-delay: 0.5s;
+        */opacity: 1;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+}
+    input[type="checkbox"]:checked ~ #icon {
+        border-color : transparent;
+        background: #ffc400;
+    }
+    input[type="checkbox"]:checked ~ #icon:after{
+        opacity: 1;
+        transform: rotate(45deg) scale(1);
+    } 
+    label.checkbox{
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+        margin-bottom: 10px;  
+    }
+    input[id="allCheck"] + #icon{
+        display: inline-block;
+        position: relative;
+        width: 20px;
+        height: 20px;
+        border: 1px solid #707070;
+        border-radius: 3px;
+        cursor: pointer;
+        transition: background 0.1s ease;
+        -webkit-transition: background 0.1s ease;
+        -moz-transition: background 0.1s ease;
+        -ms-transition: background 0.1s ease;
+        -o-transition: background 0.1s ease;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        -o-border-radius: 3px;
+    }
+    .box .allcheckbox label p { margin-left: 10px;}
+    .box .allcheckbox label { cursor: pointer; width: 50%;}
+    .box .boxframe label { pointer-events: all; z-index: 9999;}
+}
+
+
+/*tap*/
+@media all and (min-width: 768px) {
+    #wrap { margin-top: 0;}
+    .box {
+        max-width: 700px; width: 85%;
+        margin: auto;
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+    }
+    .box form { width: 80%; display: grid; grid-template-columns: repeat(2, 10fr); column-gap: 20px;}
+    .box form .inputBox {grid-column: span 2; width: 100%; margin:  10px auto;}
+    .inputBox:nth-child(1) {grid-column: span 1;}
+    .box .radioBox { grid-column: span 1; width: 100%; justify-content: right;}
+    .faq-text {grid-column: span 2; width: 100%;}
+    input[type="button"] { width: 50%; grid-column: span 2;}
+    .aBox { grid-column: span 2;}
+    .box .inputBox input[type="radio"] { width: 15px; height: 15px;}
+}
+/*pc*/
+@media all and (min-width: 1024px) {
+    
+}
+
+/*https://swimfm.tistory.com/entry/%EC%8A%A4%ED%81%AC%EB%A1%A4-%EB%82%B4%EB%A6%AC%EB%A9%B4-%EC%83%81%EB%8B%A8%EC%97%90-%EA%B3%A0%EC%A0%95%EB%90%98%EB%8A%94-%EB%84%A4%EB%B9%84-%EB%A9%94%EB%89%B4-%EB%A7%8C%EB%93%A4%EA%B8%B0
+
+부분 스크롤 고정 사이트
+
+http://rwdb.kr/button_10/
+
+버튼 css
+*/

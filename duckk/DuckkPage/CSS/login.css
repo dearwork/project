@@ -1,0 +1,127 @@
+/*mob*/
+@media all and (min-width: 320px) {
+    #wrap {
+        height: 100vh; margin-top: 0;
+    }
+    .box {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center; align-items: center;
+        width: 80%;
+        margin: auto;
+        background: #1a1a1aea;
+        box-shadow: 0 5px 5px #1a1a1aea, 0 10px 10px #1a1a1aea;
+        border-radius: 5px;
+        padding: 50px 20px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+    }
+    .box h3 { 
+        font-size: 30px; text-transform: uppercase;
+        width: 100%; text-align: center;
+        font-family: '에스코어 드림6 Bold';
+        margin-bottom: 30px; color: #fff;
+    }
+    .box form { width: 90%; margin: auto; position: relative;}
+    .box form .inputBox { position: relative;}
+    .box form .inputBox input {
+        width: 100%; margin: auto;
+        padding: 10px 0;
+        font-size: 16px;
+        color: #fff;
+        margin-bottom: 30px;
+        border: none; outline: 0;
+        border-bottom: 2px solid #fff;
+        background: transparent;
+    }
+    .box .inputBox label {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 10px 0;
+        color: #fff;
+        font-size: 16px;
+        pointer-events: none;
+        transition: .5s;
+        -webkit-transition: .5s;
+        -moz-transition: .5s;
+        -ms-transition: .5s;
+        -o-transition: .5s;
+}
+    .box .inputBox input:focus ~ label,
+    .box .inputBox input:valid ~ label {
+        top : -20px;
+        left: 0;
+        color: #ffc400;
+        font-size: 12px;
+    }
+    .box input[type="button"] {
+        display: block;
+        border: none;
+        outline: none;
+        background: #ffc400;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 3px;
+        font-size: 14px;
+        font-family: '에스코어 드림5 Medium';
+        letter-spacing: 1px;
+        margin: 20px 0;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        -o-border-radius: 3px;
+}
+    .box form a { display: block; color: #fff; padding: 3px 0; transition: .2s; -webkit-transition: .2s; -moz-transition: .2s; -ms-transition: .2s; -o-transition: .2s; }
+    .box form a span {
+        color: #ffc400; 
+        font-family: '에스코어 드림5 Medium';
+    }
+    .box .aBox {display: flex; color: #fff; align-items: baseline; font-size: 14px;}
+    .box form a { opacity: .6; font-size: 14px; margin-bottom: 10px;}
+    .box form a:nth-child(3) { margin: 0;}
+    .box form a:hover {color: #fff; opacity: 1;}
+    .box span i, .show-btn i {
+        position: absolute; top: 0; right: 0;
+        font-size: 20px; padding: 10px; color: #fff;
+        cursor: pointer;
+    }
+    .show-btn i.bx-hide { display: none;}
+    .show-btn i.bx-show { display: block;}
+    .show-btn.hide-btn i.bx-hide { display: block;}
+    .show-btn.hide-btn i.bx-show { display: none;}
+}
+
+
+/*tap*/
+@media all and (min-width: 768px) {
+    #wrap { margin-top: 0;}
+    .box {
+        max-width: 680px; width: 70%;
+        margin: auto;
+        background: #1a1a1aea;
+        box-shadow: 0 5px 5px #1a1a1aea, 0 10px 10px #1a1a1aea;
+        border-radius: 15px;
+        padding: 50px 20px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+    }
+    .box form { width: 80%;}
+}
+/*pc*/
+@media all and (min-width: 1024px) {
+    
+}
+
+/*https://swimfm.tistory.com/entry/%EC%8A%A4%ED%81%AC%EB%A1%A4-%EB%82%B4%EB%A6%AC%EB%A9%B4-%EC%83%81%EB%8B%A8%EC%97%90-%EA%B3%A0%EC%A0%95%EB%90%98%EB%8A%94-%EB%84%A4%EB%B9%84-%EB%A9%94%EB%89%B4-%EB%A7%8C%EB%93%A4%EA%B8%B0
+
+부분 스크롤 고정 사이트
+
+http://rwdb.kr/button_10/
+
+버튼 css
+*/
