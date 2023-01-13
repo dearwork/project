@@ -32,9 +32,13 @@ html,body {width: 100%; height: 100%;}
 img {display:block; width:100%;}
 
 /* FONT */
-.blind {font-size:0; line-height:0;}
+.blind {position: absolute; width: 1px; height: 1px; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); clip-path: inset(50%);}
 
+/* INPUT */
+.input_wrap input {}
 
+/* SELECT */
+select option[value=""][disabled] {display: none;}
 
 
 /* --------------------------------// [공통] -------------------------------- */

@@ -1,0 +1,39 @@
+@charset "uft-8";
+
+@import url(ui.common.css);
+
+/* -------------------------------- [공통] -------------------------------- */
+#wrap {position: relative; width: 100%; height: 100%; overflow-x: hidden;}
+/* :root {
+	
+} */
+
+/* --------------------------------// [공통] -------------------------------- */
+
+/* -------------------------------- [header, 공통페이지] -------------------------------- */
+#header {position: fixed; top: 0; bottom: 0; max-width: 180px; width: 180px; height: 100%; z-index: 100; border-right: 1px solid #DCDCDC;}
+#header .cont {width: 100%; height: 100%; padding: 50px 10px; box-sizing: border-box;}
+#header .logo {margin: 0 auto; margin-bottom: 30px;}
+#header .menu {display: flex; flex-direction: column; justify-content: space-between;}
+#header .menu ul {height: auto;}
+#header .menu li a {display: block; width: 100%; padding: 8px 0; box-sizing: border-box; font-size: 16px; font-weight: 500;}
+
+
+/* --------------------------------// [header, 공통페이지] -------------------------------- */
+table, tr,td {border: 1px solid #DCDCDC;} /* 임시 */
+/* -------------------------------- [main, 공통페이지] -------------------------------- */
+#main {width: calc(100% - 180px); margin-left: 180px; height: 100%; padding: 0 40px; box-sizing: border-box;}
+#main .cont {width: 100%; height: 100%;}
+
+/* TOP_WRAP */
+.top_wrap {display: flex; align-items: center; justify-content: space-between;}
+
+/* TABLE */
+form, table {width: 100%;}
+table tr th {}
+table tr td {padding: 10px;}
+
+table .input_wrap {display: flex;}
+
+
+/* --------------------------------// [main, 공통페이지] -------------------------------- */

@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>데이터관리 캐릭터</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="../../common/css/manager.css">
+</head>
+<body>
+	<div id="wrap">
+		<!-- HEADER -->
+		<header id="header">
+			<div class="cont">
+				<h1 class="logo">
+					<a href=""><img src="" alt="TRPG"></a>
+					<span>데이터관리</span>
+				</h1>
+				<nav class="menu">
+					<ul class="list_menu">
+						<li><a href="">HOME</a></li>
+						<li class="active"><a href="">캐릭터</a></li>
+						<li><a href="">시나리오</a></li>
+						<li><a href="">명령어</a></li>
+					</ul>
+					<ul class="btn_menu">
+						<li><a href="">관리자 수정</a></li>
+						<li><a href="">로그아웃</a></li>
+						<li><a href="">홈페이지 돌아가기</a></li>
+					</ul>
+					<!--
+						로그인을 하지 않았을 때
+						<ul class="btm_menu login">
+							<li><a href="">로그인</a></li>
+							<li><a href="">홈페이지 돌아가기</a></li>
+						</ul>
+					-->
+				</nav>
+			</div>
+		</header>
+		<!--// HEADER -->
+
+		<main id="main">
+			<div class="cont">
+				<!-- TOP_WRAP -->
+				<div class="top_wrap">
+					<div class="left_wrap">
+						<div class="txt_tit">
+							<h2>캐릭터</h2>
+							<p>관리자페이지 <span class="arrow right">&gt;</span> 캐릭터 <span class="arrow right">&gt;</span> 캐릭터 등록하기</p>
+						</div>
+					</div>
+					<div class="right_wrap">
+						<div class="quick_menu">
+							<ul>
+								<li><a href=""><span>등록하기</span></a></li>
+								<li><a href=""><span>위로</span></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!--// TOP_WRAP -->
+				
+				<section id="tab01">
+					<form name="" action="" id="add">
+						<table summary="">
+							<tbody>
+								<tr>
+									<th scope="row" class="tit">
+										<span>추가기능선택</span>
+									</th>
+									<td>
+										<div class="input_wrap">
+											<!-- 1세트 -->
+											<div class="input_check">
+												<label for="catchphrase">
+													<input type="checkbox" name="catchPhrase" id="catchphrase">
+													<i class="icon check"></i>
+													<span class="txt">캐치프레이즈</span>
+												</label>
+											</div>
+											<!--// 1세트 -->
+											<div class="input_check">
+												<label for="inshort">
+													<input type="checkbox" name="inShort" id="inshort">
+													<i class="icon check"></i>
+													<span class="txt">한마디</span>
+												</label>
+											</div>
+											<div class="input_check">
+												<label for="relation">
+													<input type="checkbox" name="relation" id="relation">
+													<i class="icon check"></i>
+													<span class="txt">관계</span>
+												</label>
+											</div>
+											<div class="input_check">
+												<label for="backstory">
+													<input type="checkbox" name="backStory" id="backstory">
+													<i class="icon check"></i>
+													<span class="txt">백스토리</span>
+												</label>
+											</div>
+											<div class="input_check">
+												<label for="onesthing">
+													<input type="checkbox" name="onesThing" id="onesthing">
+													<i class="icon check"></i>
+													<span class="txt">소지품</span>
+												</label>
+											</div>
+											<div class="input_check">
+												<label for="repreColor">
+													<input type="checkbox" name="repreColor" id="repreColor">
+													<i class="icon check"></i>
+													<span class="txt">대표컬러</span>
+												</label>
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row" class="tit on"> <!-- 해당 항목의 설명을 자세히 보고 싶으면 class="on" -->
+										<span>캐릭터 이미지</span>
+										<span class="notd"></span>
+										<!-- <div class="notd_detail">
+											<dl>
+												<dt>이미지 구분법</dt>
+												<dd><strong>두상</strong>은 머리에서부터 어깨까지 해당됩니다.</dd>
+												<dd><strong>반신</strong>은 머리에서부터 허리까지 해당됩니다.</dd>
+												<dd><strong>전신</strong>은 머리에서부터 발끝까지 해당됩니다.</dd>
+											</dl>
+											<img src="" alt="캐릭터 이미지 구별 이미지">
+										</div> -->
+									</th>
+									<td>
+										<div class="input_wrap">
+											<strong>사용여부 체크 : </strong>
+											<!-- 1세트 -->
+											<div class="input_check">
+												<label for="headface">
+													<input type="checkbox" name="headFace" id="headface">
+													<i class="icon check"></i>
+													<span class="txt">두상</span>
+												</label>
+											</div>
+											<!--// 1세트 -->
+											<div class="input_check">
+												<label for="halfbody">
+													<input type="checkbox" name="Halfbody" id="halfbody">
+													<i class="icon check"></i>
+													<span class="txt">반신</span>
+												</label>
+											</div>
+											<div class="input_check">
+												<label for="fullbody">
+													<input type="checkbox" name="fullBody" id="fullbody">
+													<i class="icon check"></i>
+													<span class="txt">전신</span>
+												</label>
+											</div>
+										</div>
+										<div class="input_wrap">
+											<div class="input_file">
+												<div class="file_wrap">
+													<button class="btn" type="submit">파일선택</button>
+													<input type="text" name="" id="" placeholder="등록하실 이미지를 선택해주세요.">
+												</div>
+												<p class="icon_notd">
+													<i class="icon"></i>
+													첨부파일 최대용량 10MB 이하
+												</p>
+											</div>
+											<div class="file_checked">
+												<div class="file">
+													<p class="name">이레인_세실_르_하트퍼드셔_두상_이미지.png</p>
+													<div class="delte">
+														<i class="icon close"></i>
+														<span class="blind">닫기</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row" class="tit">
+										<span>캐릭터 외관</span>
+									</th>
+									<td>
+										<div class="input_txtarea">
+											<textarea name="" id=""></textarea>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row" class="tit">
+										<span>이름</span>
+									</th>
+									<td>
+										<div class="name">
+											<div class="input_txt">
+												<input type="text" name="" id="" placeholder="캐릭터의 이름을 입력해주세요." required>
+											</div>
+										</div>
+
+										<div class="other">
+											<div class="input_wrap">
+												<strong>사용여부 체크 : </strong>
+												<div class="input_check">
+													<label for="name_none">
+														<input type="radio" name="nameOther" id="name_none" checked>
+														<i class="icon check"></i>
+														<span class="txt">사용안함</span>
+													</label>
+												</div>
+												<div class="input_check">
+													<label for="name_en">
+														<input type="radio" name="nameOther" id="name_en">
+														<i class="icon check"></i>
+														<span class="txt">영문</span>
+													</label>
+												</div>
+												<div class="input_check">
+													<label for="name_zh">
+														<input type="radio" name="nameOther" id="name_zh">
+														<i class="icon check"></i>
+														<span class="txt">중/한문</span>
+													</label>
+												</div>
+												<div class="input_check">
+													<label for="name_fake">
+														<input type="radio" name="nameOther" id="name_fake">
+														<i class="icon check"></i>
+														<span class="txt">별명/가명</span>
+													</label>
+												</div>
+											</div>
+											<div class="input_txt">
+												<input type="text" name="" id="" placeholder="캐릭터의 이름을 입력해주세요." required>
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row" class="tit">
+										<span>국적<br>출생지/거주지</span>
+									</th>
+									<td>
+										<div class="input_wrap">
+											<p class="tit">국적 : </p>
+											<div class="input_txt">
+												<input type="text" name="" id="" placeholder="" required>
+											</div>
+										</div>
+										<div class="input_wrap">
+											<div class="item">
+												<p class="tit">출생지 : </p>
+												<div class="input_txt">
+													<input type="text" name="" id="" placeholder="" required>
+												</div>
+											</div>
+											<div class="item">
+												<p class="tit">거주지 : </p>
+												<div class="input_txt">
+													<input type="text" name="" id="" placeholder="" required>
+												</div>
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row" class="tit">
+										<span>직업</span>
+									</th>
+									<td>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row" class="tit">
+										<span>나이<br>생년월일</span>
+									</th>
+									<td>
+										<div class="age_wrap">
+											<div class="input_txt">
+												<input type="text" name="age" id="age" placeholder="캐릭터의 나이를 입력해주세요." required>
+											</div>
+										</div>
+										<div class="input_wrap birthday_wrap">
+											<div class="input_txt">
+												<input type="text" name="birthYear" id="birth_year" placeholder="태어난 연도를 입력해주세요." required>
+											</div>
+											<select name="birthMonth" id="birth_month" class="birth_month" required>
+												<option value="" disabled selected>월</option>
+												<option value="1">1월</option>
+												<option value="2">2월</option>
+												<option value="3">3월</option>
+												<option value="4">4월</option>
+												<option value="5">5월</option>
+												<option value="6">6월</option>
+												<option value="7">7월</option>
+												<option value="8">8월</option>
+												<option value="9">9월</option>
+												<option value="10">10월</option>
+												<option value="11">11월</option>
+												<option value="12">12월</option>
+											</select>
+											<select name="birthDay" id="birth_day" class="birth_day" required>
+												<option value="" disabled selected>일</option>
+												<option value="1">1일</option>
+												<option value="2">2일</option>
+												<option value="3">3일</option>
+												<option value="4">4일</option>
+												<option value="5">5일</option>
+												<option value="6">6일</option>
+												<option value="7">7일</option>
+												<option value="8">8일</option>
+												<option value="9">9일</option>
+												<option value="10">10일</option>
+												<option value="10">11일</option>
+												<option value="10">12일</option>
+												<option value="11">13일</option>
+												<option value="11">14일</option>
+												<option value="11">15일</option>
+												<option value="12">16일</option>
+												<option value="12">17일</option>
+												<option value="12">18일</option>
+												<option value="12">19일</option>
+												<option value="12">20일</option>
+												<option value="12">21일</option>
+												<option value="12">22일</option>
+												<option value="12">23일</option>
+												<option value="12">24일</option>
+												<option value="12">25일</option>
+												<option value="12">26일</option>
+												<option value="12">27일</option>
+												<option value="12">28일</option>
+												<option value="12">29일</option>
+												<option value="12">30일</option>
+												<option value="12">31일</option>
+											</select>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row" class="tit">
+										<span>성별</span>
+									</th>
+									<td>
+										<div class="input_check">
+											<label for="gender_xx">
+												<input type="radio" name="gender" id="gender_xx">
+												<i class="icon radio"></i>
+												<span class="txt">여성</span>
+											</label>
+										</div>
+										<div class="input_check">
+											<label for="gender_xy">
+												<input type="radio" name="gender" id="gender_xy">
+												<i class="icon radio"></i>
+												<span class="txt">남성</span>
+											</label>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row" class="tit">
+										<span>키/몸무게</span>
+									</th>
+									<td>
+										<div class="input_wrap">
+											<div class="item">
+												<div class="input_txt">
+													<input type="text" name="height" id="height" placeholder="키를 입력해주세요.(기준: cm)">
+												</div>
+												<span>cm</span>
+											</div>
+											<div class="item">
+												<div class="input_txt">
+													<input type="text" name="weight" id="weight" placeholder="몸무게를 입력해주세요.(기준: kg)">
+												</div>
+												<span>kg</span>
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row" class="tit">
+										<span>성격</span>
+									</th>
+									<td>
+										<div class="other">
+											<div class="input_wrap">
+												<strong>사용여부 체크 : </strong>
+												<div class="input_check">
+													<label for="name_none">
+														<input type="radio" name="nameOther" id="name_none" checked>
+														<i class="icon check"></i>
+														<span class="txt">사용안함</span>
+													</label>
+												</div>
+												<div class="input_check">
+													<label for="">
+														<input type="radio" name="" id="">
+														<i class="icon check"></i>
+														<span class="txt">키워드</span>
+													</label>
+													<div class="input_add">
+														<button type="button" class="btn sub">-</button>
+														<input type="tel" name="" id="" maxlength="3" placeholder="0">
+														<button type="button" class="btn add">+</button>
+													</div>
+												</div>
+												<div class="input_check">
+													<label for="">
+														<input type="radio" name="" id="">
+														<i class="icon check"></i>
+														<span class="txt">문장</span>
+													</label>
+													<div class="input_add">
+														<button type="button" class="btn sub">-</button>
+														<input type="tel" name="" id="" maxlength="3" placeholder="0">
+														<button type="button" class="btn add">+</button>
+													</div>
+												</div><div class="input_check">
+													<label for="">
+														<input type="radio" name="" id="">
+														<i class="icon check"></i>
+														<span class="txt">명언</span>
+													</label>
+													<div class="input_add">
+														<button type="button" class="btn sub">-</button>
+														<input type="tel" name="" id="" maxlength="3" placeholder="0">
+														<button type="button" class="btn add">+</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="input_wrap">
+											<div class="input_txt">
+												<input type="text" name="" id="" placeholder="캐릭터의 이름을 입력해주세요." required>
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row" class="tit">
+										<span>부상</span>
+									</th>
+									<td>
+										<div class="input_txtarea">
+											<textarea name="" id=""></textarea>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row" class="tit">
+										<span>기타</span>
+									</th>
+									<td>
+										<div class="other">
+											<div class="input_wrap">
+												<strong>사용여부 체크 : </strong>
+												<div class="input_check">
+													<label for="name_none">
+														<input type="radio" name="nameOther" id="name_none" checked>
+														<i class="icon check"></i>
+														<span class="txt">사용안함</span>
+													</label>
+												</div>
+												<div class="input_check">
+													<label for="">
+														<input type="radio" name="" id="">
+														<i class="icon check"></i>
+														<span class="txt">개인정보</span>
+													</label>
+												</div>
+												<div class="input_check">
+													<label for="">
+														<input type="radio" name="" id="">
+														<i class="icon check"></i>
+														<span class="txt">좋아하는 것</span>
+													</label>
+												</div>
+												<div class="input_check">
+													<label for="">
+														<input type="radio" name="" id="">
+														<i class="icon check"></i>
+														<span class="txt">싫어하는 것</span>
+													</label>
+												</div>
+												<div class="input_check">
+													<label for="">
+														<input type="radio" name="" id="">
+														<i class="icon check"></i>
+														<span class="txt">취미</span>
+													</label>
+												</div>
+												<div class="input_check">
+													<label for="">
+														<input type="radio" name="" id="">
+														<i class="icon check"></i>
+														<span class="txt">특기</span>
+													</label>
+												</div>
+												<div class="input_check">
+													<label for="">
+														<input type="radio" name="" id="">
+														<i class="icon check"></i>
+														<span class="txt">기타</span>
+													</label>
+												</div>
+												
+											</div>
+										</div>
+										<div class="input_wrap">
+											<div class="input_txt">
+												<input type="text" name="" id="" placeholder="캐릭터의 이름을 입력해주세요." required>
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row" class="tit">
+										<span>소지품</span>
+									</th>
+									<td>
+										
+									</td>
+								</tr>
+								<tr>
+									<th scope="row" class="tit">
+										<span>능력치</span>
+									</th>
+									<td>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row" class="tit">
+										<span>특성치</span>
+									</th>
+									<td>
+									</td>
+								</tr>
+
+							</tbody>
+						</table>
+					</form>
+				</section>
+
+				<section id="tab02"></section>
+
+			</div>
+		</main>
+
+	</div><!--// WRAP -->
+</body>
+</html>
